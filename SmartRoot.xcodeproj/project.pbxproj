@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3B6CC36F5CD5A55C1E7DC1 /* libPods-SmartRoot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */; };
 		607CEB611C469B260090D047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEB601C469B260090D047 /* AppDelegate.swift */; };
 		607CEB631C469B260090D047 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEB621C469B260090D047 /* FirstViewController.swift */; };
 		607CEB651C469B260090D047 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEB641C469B260090D047 /* SecondViewController.swift */; };
@@ -28,6 +29,9 @@
 		607CEB6E1C469B260090D047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607CEB741C469EA50090D047 /* Mypage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mypage.swift; sourceTree = "<group>"; };
 		607CEB761C46A18C0090D047 /* Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartRoot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD865618EBD38913FDE7565 /* Pods-SmartRoot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot.debug.xcconfig"; sourceTree = "<group>"; };
+		F3FD10957247A6D28F6C6796 /* Pods-SmartRoot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoot.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3B6CC36F5CD5A55C1E7DC1 /* libPods-SmartRoot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076389D9CE55E66098A9E532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607CEB541C469B260090D047 = {
 			isa = PBXGroup;
 			children = (
 				607CEB5F1C469B260090D047 /* SmartRoot */,
 				607CEB5E1C469B260090D047 /* Products */,
+				90D13CCC7474CF78C5C6512F /* Pods */,
+				076389D9CE55E66098A9E532 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,15 @@
 			path = SmartRoot;
 			sourceTree = "<group>";
 		};
+		90D13CCC7474CF78C5C6512F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCD865618EBD38913FDE7565 /* Pods-SmartRoot.debug.xcconfig */,
+				F3FD10957247A6D28F6C6796 /* Pods-SmartRoot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607CEB711C469B260090D047 /* Build configuration list for PBXNativeTarget "SmartRoot" */;
 			buildPhases = (
+				FBB1C245F0BEF4CDDD24D7DB /* Check Pods Manifest.lock */,
 				607CEB591C469B260090D047 /* Sources */,
 				607CEB5A1C469B260090D047 /* Frameworks */,
 				607CEB5B1C469B260090D047 /* Resources */,
+				F41F2808053954ECC43FB3DD /* Embed Pods Frameworks */,
+				9B3E56EC61005B30E8CA045E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B3E56EC61005B30E8CA045E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41F2808053954ECC43FB3DD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB1C245F0BEF4CDDD24D7DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607CEB591C469B260090D047 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		607CEB721C469B260090D047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD865618EBD38913FDE7565 /* Pods-SmartRoot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartRoot/Info.plist;
@@ -269,6 +345,7 @@
 		};
 		607CEB731C469B260090D047 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FD10957247A6D28F6C6796 /* Pods-SmartRoot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartRoot/Info.plist;
@@ -297,6 +374,7 @@
 				607CEB731C469B260090D047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
