@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,UIApplicationDelegate  {
 
     var googleMap : GMSMapView!
     
@@ -27,7 +27,8 @@ class FirstViewController: UIViewController {
         // カメラ
         let camera: GMSCameraPosition = GMSCameraPosition.cameraWithLatitude(latitude,longitude: longitude, zoom: zoom)
         
-        // MapViewを生成
+        // MapViewを生成　
+        
         googleMap = GMSMapView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height))
 
         // MapViewにカメラを追加
