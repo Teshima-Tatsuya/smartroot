@@ -7,5 +7,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'SmartRoot' do
     pod 'GoogleMaps'
+    pod 'PageMenu'
 end
-
