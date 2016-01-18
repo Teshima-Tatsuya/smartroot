@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="269" y="1023"/>
         </scene>
-        <!--Test1 View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="IEr-Se-Mfj">
             <objects>
-                <viewController storyboardIdentifier="test1" id="f6V-xJ-3oy" customClass="Test1ViewController" customModule="SmartRoot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="test1" id="f6V-xJ-3oy" customClass="TableViewController" customModule="SmartRoot" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g8I-a6-KIF"/>
                         <viewControllerLayoutGuide type="bottom" id="9S6-Si-Xgx"/>
@@ -240,7 +240,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ユーザーネーム" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-wg-7uH">
                                 <rect key="frame" x="124" y="91" width="119" height="21"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

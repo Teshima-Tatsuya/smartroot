@@ -9,4 +9,5 @@ use_frameworks!
 
 target 'SmartRoot' do
     pod 'GoogleMaps'
-end
+    pod 'PageMenu'
+end 
