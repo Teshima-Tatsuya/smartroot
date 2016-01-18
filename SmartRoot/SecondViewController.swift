@@ -17,6 +17,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("test")
+        
         self.title = "PageMenu"
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         
@@ -43,6 +45,7 @@ class SecondViewController: UIViewController {
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 50.0, self.view.frame.width, self.view.frame.height), options: parameters)
         
         self.view.addSubview(pageMenu!.view)
+        
     }
 
     override func didReceiveMemoryWarning() {
