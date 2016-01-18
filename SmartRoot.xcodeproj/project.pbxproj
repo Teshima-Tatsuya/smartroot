@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E3B6CC36F5CD5A55C1E7DC1 /* libPods-SmartRoot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */; };
 		6068D61C1C4BC80200215CD7 /* user-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6068D61B1C4BC80200215CD7 /* user-default.png */; };
 		6068D61E1C4BCF3D00215CD7 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D61D1C4BCF3D00215CD7 /* CAPSPageMenu.swift */; };
 		6068D6201C4BDA4F00215CD7 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D61F1C4BDA4F00215CD7 /* Test1ViewController.swift */; };
@@ -20,6 +19,7 @@
 		607CEB6D1C469B260090D047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607CEB6B1C469B260090D047 /* LaunchScreen.storyboard */; };
 		607CEB751C469EA50090D047 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEB741C469EA50090D047 /* MypageViewController.swift */; };
 		607CEB771C46A18C0090D047 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEB761C46A18C0090D047 /* Root.swift */; };
+		AF8DF035417C64CA13703559 /* Pods_SmartRoot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AB5FF26D5866B0633FFE1F /* Pods_SmartRoot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		607CEB6E1C469B260090D047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607CEB741C469EA50090D047 /* MypageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		607CEB761C46A18C0090D047 /* Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
-		8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartRoot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AB5FF26D5866B0633FFE1F /* Pods_SmartRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD865618EBD38913FDE7565 /* Pods-SmartRoot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot.debug.xcconfig"; sourceTree = "<group>"; };
 		F3FD10957247A6D28F6C6796 /* Pods-SmartRoot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoot.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoot/Pods-SmartRoot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3B6CC36F5CD5A55C1E7DC1 /* libPods-SmartRoot.a in Frameworks */,
+				AF8DF035417C64CA13703559 /* Pods_SmartRoot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 		076389D9CE55E66098A9E532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8BA95CB8B6F9E1BF3DAAE792 /* libPods-SmartRoot.a */,
+				A8AB5FF26D5866B0633FFE1F /* Pods_SmartRoot.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
