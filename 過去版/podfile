@@ -9,4 +9,8 @@ use_frameworks!
 
 target 'SmartRoot' do
     pod 'GoogleMaps'
+<<<<<<< HEAD:過去版/podfile
+=======
+    pod 'PageMenu'
+>>>>>>> 7e9ac372fa8cd26049e05bb580126437433bc04b:Podfile
 end 
