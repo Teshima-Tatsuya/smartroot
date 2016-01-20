@@ -16,6 +16,7 @@
 		602ACFFA1C4E8BD50017C0A5 /* Table2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602ACFF91C4E8BD50017C0A5 /* Table2ViewController.swift */; };
 		602ACFFC1C4E8BE60017C0A5 /* Table3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602ACFFB1C4E8BE60017C0A5 /* Table3ViewController.swift */; };
 		602ACFFE1C4E8BFE0017C0A5 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602ACFFD1C4E8BFE0017C0A5 /* CAPSPageMenu.swift */; };
+		60449C061C4FC7E8002B4070 /* RootSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60449C051C4FC7E8002B4070 /* RootSearchController.swift */; };
 		A3EDAD74694F2F19A9504536 /* Pods_smartroot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8AA969AA13BC758BE710E7 /* Pods_smartroot.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		602ACFF91C4E8BD50017C0A5 /* Table2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table2ViewController.swift; sourceTree = "<group>"; };
 		602ACFFB1C4E8BE60017C0A5 /* Table3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table3ViewController.swift; sourceTree = "<group>"; };
 		602ACFFD1C4E8BFE0017C0A5 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		60449C051C4FC7E8002B4070 /* RootSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootSearchController.swift; sourceTree = "<group>"; };
 		D8A088B38FBC850300F5DDFE /* Pods-smartroot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartroot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartroot/Pods-smartroot.debug.xcconfig"; sourceTree = "<group>"; };
 		FC8AA969AA13BC758BE710E7 /* Pods_smartroot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartroot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				602ACFDD1C4E880C0017C0A5 /* AppDelegate.swift */,
 				602ACFDF1C4E880C0017C0A5 /* ViewController.swift */,
 				602ACFE11C4E880C0017C0A5 /* Main.storyboard */,
+				60449C051C4FC7E8002B4070 /* RootSearchController.swift */,
 				602ACFFD1C4E8BFE0017C0A5 /* CAPSPageMenu.swift */,
 				602ACFF71C4E8BB90017C0A5 /* Table1ViewController.swift */,
 				602ACFF91C4E8BD50017C0A5 /* Table2ViewController.swift */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				602ACFE01C4E880C0017C0A5 /* ViewController.swift in Sources */,
+				60449C061C4FC7E8002B4070 /* RootSearchController.swift in Sources */,
 				602ACFFC1C4E8BE60017C0A5 /* Table3ViewController.swift in Sources */,
 				602ACFFE1C4E8BFE0017C0A5 /* CAPSPageMenu.swift in Sources */,
 				602ACFDE1C4E880C0017C0A5 /* AppDelegate.swift in Sources */,
