@@ -11,6 +11,9 @@ import GoogleMaps
 
 class SearchSpotController: UIViewController {
     
+    @IBOutlet var nav: UINavigationBar!
+    
+    @IBOutlet var searchSpot: UITextField!
     var googleMap : GMSMapView!
     
     //緯度経度 -> 金沢駅
@@ -41,6 +44,7 @@ class SearchSpotController: UIViewController {
         
         //viewにMapViewを追加.
         self.view.addSubview(googleMap)
+        self.view.addSubview(nav)
     }
     
     override func didReceiveMemoryWarning() {
