@@ -8,12 +8,33 @@
 
 import UIKit
 
-class MyRouteTableViewController: UIViewController {
+class MyRouteTableViewController: UIViewController, UITableViewDelegate {
+    
+    var cellRoute = ["広島", "東京"]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return cellRoute.count
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+    
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Route")
+        
+        cell.textLabel?.text = cellRoute[indexPath.row]
+        
+        return cell
+    
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
