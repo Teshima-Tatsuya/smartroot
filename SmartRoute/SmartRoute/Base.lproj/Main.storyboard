@@ -81,12 +81,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPh-fZ-r0f">
-                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
-                                <items>
-                                    <navigationItem title="ルート検索" id="vOf-l1-jLk"/>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZK-Zt-eh0">
                                 <rect key="frame" x="20" y="247" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -119,12 +113,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Eq-Id-cva">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Yz9-yM-GJY"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="bia-1p-rFu"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rPh-fZ-r0f" firstAttribute="top" secondItem="6Lf-XQ-T2f" secondAttribute="bottom" id="FmC-Z6-82s"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rPh-fZ-r0f" secondAttribute="trailing" constant="-20" id="k89-9B-lDa"/>
-                            <constraint firstItem="rPh-fZ-r0f" firstAttribute="leading" secondItem="NG4-fi-mXv" secondAttribute="leadingMargin" constant="-20" id="ufM-j5-Ec2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Eq-Id-cva" secondAttribute="trailing" constant="-20" id="FJL-iY-9ij"/>
+                            <constraint firstItem="8Eq-Id-cva" firstAttribute="leading" secondItem="NG4-fi-mXv" secondAttribute="leadingMargin" constant="-20" id="QCu-Vg-nkD"/>
+                            <constraint firstItem="8Eq-Id-cva" firstAttribute="top" secondItem="NG4-fi-mXv" secondAttribute="topMargin" id="mdN-YH-nIB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="PxS-cD-E83"/>
