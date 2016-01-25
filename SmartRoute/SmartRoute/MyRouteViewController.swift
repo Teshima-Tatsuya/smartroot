@@ -10,9 +10,17 @@ import UIKit
 
 class MyRouteViewController: UIViewController {
     
+    @IBOutlet var cellImg: UIImageView!
+    var routeSelectedImage: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        cellImg.image = routeSelectedImage
+        // 画像のアスペクト比を維持しUIImageViewサイズに収まるように表示
+        cellImg.contentMode = UIViewContentMode.ScaleAspectFit
+
     }
     
     override func didReceiveMemoryWarning() {

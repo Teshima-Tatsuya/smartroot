@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyRouteTableViewController: UIViewController, UITableViewDelegate {
+class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet var routeTable: UITableView!
@@ -16,6 +16,8 @@ class MyRouteTableViewController: UIViewController, UITableViewDelegate {
     var cellRouteTitle = ["広島", "東京"]
     
     var cellRouteImage = ["testImage.jpg", "testImage.jpg"]
+    
+    var routeSelectedImage: UIImage?
     
     
     override func viewDidLoad() {
@@ -46,6 +48,25 @@ class MyRouteTableViewController: UIViewController, UITableViewDelegate {
         
         return cell
     
+    }
+    
+    // Cell が選択された場合
+    func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+        // [indexPath.row] から画像名を探し、UImage を設定
+        routeSelectedImage = UIImage(named:"\(cellRouteImage[indexPath.row])")
+        if routeSelectedImage != nil {
+            // 画像が空でなければSubViewControllerへ遷移するためにSegueを呼び出す
+        performSegueWithIdentifier("MyRouteViewController",sender: nil)
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "MyRouteViewController") {
+            let subVC: MyRouteViewController = (segue.destinationViewController as? MyRouteViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+            subVC.routeSelectedImage = routeSelectedImage
+        }
     }
 
     
