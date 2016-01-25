@@ -10,8 +10,12 @@ import UIKit
 
 class MyRouteTableViewController: UIViewController, UITableViewDelegate {
     
-    var cellRoute = ["広島", "東京"]
     
+    @IBOutlet var routeTable: UITableView!
+    
+    var cellRouteTitle = ["広島", "東京"]
+    
+    var cellRouteImage = ["testImage.jpg", "testImage.jpg"]
     
     
     override func viewDidLoad() {
@@ -21,15 +25,24 @@ class MyRouteTableViewController: UIViewController, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return cellRoute.count
+        return cellRouteTitle.count
         
     }
     
+    //cellの設定
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
     
-        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Route")
+        let cell = routeTable.dequeueReusableCellWithIdentifier("Route", forIndexPath: indexPath)
         
-        cell.textLabel?.text = cellRoute[indexPath.row]
+        //cellに画像を追加(viewWithTagはストーリーボードで設定)
+        let img = UIImage(named: "\(cellRouteImage[indexPath.row])")
+        let cellImg = routeTable.viewWithTag(1) as! UIImageView
+        cellImg.image = img
+        
+        //cellにタイトルを追加
+        let title = routeTable.viewWithTag(2) as! UILabel
+        title.text? = "\(cellRouteTitle[indexPath.row])"
+        
         
         return cell
     

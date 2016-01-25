@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B45C0A1C56654A008A4D1B /* testImage.jpg */; };
 		60F059971C5118860097261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059961C5118860097261B /* AppDelegate.swift */; };
 		60F0599C1C5118860097261B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599A1C5118860097261B /* Main.storyboard */; };
 		60F0599E1C5118860097261B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599D1C5118860097261B /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60B45C0A1C56654A008A4D1B /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
 		60F059931C5118860097261B /* SmartRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F059961C5118860097261B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60F0599B1C5118860097261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				60F059BE1C51260D0097261B /* MyRouteViewController.swift */,
 				60F059C01C51261D0097261B /* MyRouteTableViewController.swift */,
 				60F059BA1C5120B50097261B /* SearchRouteResultController.swift */,
+				60B45C0A1C56654A008A4D1B /* testImage.jpg */,
 				60F059B81C51206C0097261B /* SearchRouteController.swift */,
 				60F059B41C511E500097261B /* MySpotTableViewController.swift */,
 				60F059B61C511E8D0097261B /* CAPSPageMenu.swift */,
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */,
 				60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */,
 				60F0599E1C5118860097261B /* Assets.xcassets in Resources */,
 				60F0599C1C5118860097261B /* Main.storyboard in Resources */,
