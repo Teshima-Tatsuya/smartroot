@@ -26,6 +26,103 @@
             </objects>
             <point key="canvasLocation" x="1030" y="1189"/>
         </scene>
+        <!--My Route Table View Controller-->
+        <scene sceneID="zce-18-yaH">
+            <objects>
+                <viewController storyboardIdentifier="MyRouteTable" id="Frr-gU-hKb" customClass="MyRouteTableViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qfa-uk-bCE"/>
+                        <viewControllerLayoutGuide type="bottom" id="CbD-jC-Pg3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gae-Pm-TfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-4j-hVT">
+                                <rect key="frame" x="-4" y="-5" width="328" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="82" id="7ep-Rz-ryq">
+                                        <rect key="frame" x="0.0" y="28" width="328" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ep-Rz-ryq" id="aZX-yt-MIQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bie-Ny-9qL">
+                                                    <rect key="frame" x="15" y="0.0" width="78" height="71"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT4-yQ-auD">
+                                                    <rect key="frame" x="118" y="25" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Frr-gU-hKb" id="S5h-TQ-4Lf"/>
+                                    <outlet property="delegate" destination="Frr-gU-hKb" id="SdQ-pc-Bu0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CbD-jC-Pg3" firstAttribute="top" secondItem="mOh-4j-hVT" secondAttribute="bottom" id="S0n-ji-ZD7"/>
+                            <constraint firstItem="mOh-4j-hVT" firstAttribute="leading" secondItem="gae-Pm-TfZ" secondAttribute="leadingMargin" constant="-20" id="frM-oC-hsf"/>
+                            <constraint firstItem="mOh-4j-hVT" firstAttribute="top" secondItem="gae-Pm-TfZ" secondAttribute="topMargin" constant="-5" id="jCY-qx-uL3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mOh-4j-hVT" secondAttribute="trailing" constant="-20" id="yyS-RQ-PLj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="irW-XH-CY8" kind="presentation" identifier="toRouteCell" id="a5f-xW-Ibw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cb-d4-mcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="1189"/>
+        </scene>
+        <!--My Route View Controller-->
+        <scene sceneID="5RS-7y-Gce">
+            <objects>
+                <viewController storyboardIdentifier="MyRoute" id="irW-XH-CY8" customClass="MyRouteViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w0j-pb-dmn"/>
+                        <viewControllerLayoutGuide type="bottom" id="XHN-a5-kp1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6aZ-0p-JYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYw-bW-NYs">
+                                <rect key="frame" x="40" y="80" width="240" height="128"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBL-lb-2co">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="44"/>
+                                <items>
+                                    <navigationItem title="RouteTitle" id="I7u-1Q-YDH"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yBL-lb-2co" firstAttribute="top" secondItem="6aZ-0p-JYq" secondAttribute="topMargin" id="MwS-cd-t2z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBL-lb-2co" secondAttribute="trailing" constant="-20" id="Z5d-ed-rS1"/>
+                            <constraint firstItem="yBL-lb-2co" firstAttribute="leading" secondItem="6aZ-0p-JYq" secondAttribute="leadingMargin" constant="-20" id="lpv-Xc-hek"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="routeImage" destination="BYw-bW-NYs" id="gwR-oH-mbf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqu-PX-CP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="1189"/>
+        </scene>
         <!--Search Spot Result Controller-->
         <scene sceneID="QkT-3b-oZ9">
             <objects>
@@ -224,101 +321,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAb-nW-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1051" y="2468"/>
-        </scene>
-        <!--My Route View Controller-->
-        <scene sceneID="iQA-An-3wX">
-            <objects>
-                <viewController storyboardIdentifier="MyRoute" id="36a-l6-eyu" customClass="MyRouteViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bF6-Uq-qZy"/>
-                        <viewControllerLayoutGuide type="bottom" id="sfd-Z4-HjA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SQk-aT-Hww">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmL-Uk-mdW">
-                                <rect key="frame" x="139" y="206" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atJ-ry-Dji">
-                                <rect key="frame" x="40" y="253" width="240" height="128"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="cellImg" destination="atJ-ry-Dji" id="etc-oO-xTL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Caw-nc-VKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1755" y="1189"/>
-        </scene>
-        <!--My Route Table View Controller-->
-        <scene sceneID="duJ-de-6Kr">
-            <objects>
-                <viewController storyboardIdentifier="MyRouteTable" id="mWo-rK-ljb" customClass="MyRouteTableViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZkI-Xl-o0n"/>
-                        <viewControllerLayoutGuide type="bottom" id="h9S-Zp-3n4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ftk-iq-ydO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vs0-qn-7ls">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Route" rowHeight="75" id="mo7-kz-Er4">
-                                        <rect key="frame" x="0.0" y="28" width="328" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mo7-kz-Er4" id="lzo-Ck-dZU">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BB1-aj-iXO">
-                                                    <rect key="frame" x="13" y="0.0" width="71" height="68"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L3-ma-X05">
-                                                    <rect key="frame" x="110" y="23" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="36a-l6-eyu" kind="presentation" identifier="MyRouteViewController" id="nZ9-gt-pbg"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="mWo-rK-ljb" id="EEU-ih-jtl"/>
-                                    <outlet property="delegate" destination="mWo-rK-ljb" id="pBu-z8-5Lo"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Vs0-qn-7ls" firstAttribute="top" secondItem="ftk-iq-ydO" secondAttribute="topMargin" id="JeV-98-0CP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Vs0-qn-7ls" secondAttribute="trailing" constant="-20" id="Lmp-f1-BwC"/>
-                            <constraint firstItem="Vs0-qn-7ls" firstAttribute="leading" secondItem="ftk-iq-ydO" secondAttribute="leadingMargin" constant="-20" id="giv-NE-OTQ"/>
-                            <constraint firstItem="h9S-Zp-3n4" firstAttribute="top" secondItem="Vs0-qn-7ls" secondAttribute="bottom" id="zy2-9Y-jIc"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="routeTable" destination="Vs0-qn-7ls" id="ZIu-yn-oFh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m5r-c6-8fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1393" y="1189"/>
         </scene>
         <!--Spot-->
         <scene sceneID="TxV-ln-L3C">
