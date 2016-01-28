@@ -66,6 +66,10 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
             subVC.selectedRouteImg = selectedRouteImage
         }
     }
+    
+    @IBAction func unwindAction(segue:UIStoryboardSegue){
+    //戻った後の処理を書く
+    }
 
     
     override func didReceiveMemoryWarning() {
