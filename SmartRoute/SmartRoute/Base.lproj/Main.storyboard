@@ -379,7 +379,7 @@
                             <constraint firstItem="Jy9-zD-M12" firstAttribute="top" secondItem="9gj-dr-Sb5" secondAttribute="topMargin" id="xes-OJ-7ZG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="BPG-b8-v80"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="spot" id="BPG-b8-v80"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nav" destination="Jy9-zD-M12" id="5CU-uB-Ucp"/>
@@ -430,4 +430,7 @@
             <point key="canvasLocation" x="1393" y="1845"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spot" width="20" height="26"/>
+    </resources>
 </document>
