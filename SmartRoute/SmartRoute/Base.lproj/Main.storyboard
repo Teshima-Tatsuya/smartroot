@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="I7S-vn-XUi"/>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="user" id="I7S-vn-XUi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -240,7 +240,7 @@
                             <constraint firstItem="8Eq-Id-cva" firstAttribute="top" secondItem="NG4-fi-mXv" secondAttribute="topMargin" id="mdN-YH-nIB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="PxS-cD-E83"/>
+                    <tabBarItem key="tabBarItem" title="ルート" image="route" id="PxS-cD-E83"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="RouteTextField1" destination="hCI-xY-xLw" id="iOw-li-pL9"/>
@@ -328,7 +328,7 @@
             </objects>
             <point key="canvasLocation" x="1408" y="530"/>
         </scene>
-        <!--Item-->
+        <!--設定-->
         <scene sceneID="Yr8-Q4-5oG">
             <objects>
                 <viewController storyboardIdentifier="Setting" id="wOC-8T-jsC" customClass="SettingViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
@@ -341,7 +341,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="b83-4x-QVD"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="settings" id="b83-4x-QVD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAb-nW-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,6 +431,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="route" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
         <image name="spot" width="20" height="26"/>
+        <image name="user" width="24" height="24"/>
     </resources>
 </document>
