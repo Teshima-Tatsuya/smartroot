@@ -12,6 +12,7 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet var table:UITableView!
     
+    
     let routeImage: NSArray = ["testImage.jpg","testImage.jpg"]
     
     let routeTitle: NSArray = ["広島","東京"]
@@ -67,14 +68,26 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    @IBAction func unwindAction(segue:UIStoryboardSegue){
-    //戻った後の処理を書く
-    }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    
+
+    
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue? {
+        if let id = identifier {
+            let unwindSegue = UnwindSegue(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+            })
+            return unwindSegue
+        }
+        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)!
+    }
+    
+    @IBAction func unwindToSubject(segue:UIStoryboardSegue){
+        NSLog("SearchRouteController#backSearchRouteResultController")
     }
     
     

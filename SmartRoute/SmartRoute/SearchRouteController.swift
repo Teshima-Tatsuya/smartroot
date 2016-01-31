@@ -51,8 +51,10 @@ class SearchRouteController: UIViewController {
     /*
     * SearchRouteResultControllerから戻ってきた時の処理
     */
+    
     @IBAction func backFromSecondView(segue:UIStoryboardSegue){
         NSLog("SearchRouteController#backSearchRouteResultController")
     }
+
     
 }

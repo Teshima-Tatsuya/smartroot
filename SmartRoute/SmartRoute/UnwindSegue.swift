@@ -11,11 +11,11 @@ import UIKit
 class UnwindSegue: UIStoryboardSegue {
     
     override func perform() {
-
+        //ViewControllerのインスタンスを取得する
         let firstVCView = destinationViewController.view as UIView!
         let secondVCView = sourceViewController.view as UIView!
         
-
+        //画面の縦横を取得する
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         let screenWidth = UIScreen.mainScreen().bounds.size.width
         //戻った先のビューを画面外に設置する。
