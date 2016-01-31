@@ -104,7 +104,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="FZR-ql-CLO">
-                                        <barButtonItem key="leftBarButtonItem" image="back" id="gzg-0Y-Zm5"/>
+                                        <barButtonItem key="leftBarButtonItem" image="back" id="gzg-0Y-Zm5">
+                                            <connections>
+                                                <segue destination="64A-RE-Ggl" kind="unwind" customClass="UnwindSegue" customModule="SmartRoute" customModuleProvider="target" unwindAction="unwindToSubject:" id="XZa-k7-Vq7"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -125,6 +129,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqu-PX-CP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="64A-RE-Ggl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1798" y="1189"/>
         </scene>
@@ -299,7 +304,13 @@
                                     <constraint firstAttribute="height" constant="65" id="0tx-99-Q20"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="検索結果" id="64d-ke-jpv"/>
+                                    <navigationItem title="検索結果" id="64d-ke-jpv">
+                                        <barButtonItem key="leftBarButtonItem" image="back" id="KmL-5T-dnb">
+                                            <connections>
+                                                <segue destination="Ytg-pX-tFd" kind="unwind" unwindAction="backFromSecondView:" id="MAK-3V-hCF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -319,6 +330,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQp-Wx-fcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ytg-pX-tFd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1408" y="530"/>
         </scene>
