@@ -32,3 +32,5 @@ Pods/
 # Carthage/Checkouts
 
 Carthage/Build
+
+google.plist
