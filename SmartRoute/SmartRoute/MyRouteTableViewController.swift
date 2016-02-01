@@ -75,19 +75,9 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     
-
-    
-    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue? {
-        if let id = identifier {
-            let unwindSegue = UnwindSegue(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
-            })
-            return unwindSegue
-        }
-        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)!
-    }
     
     @IBAction func unwindToSubject(segue:UIStoryboardSegue){
-        NSLog("SearchRouteController#backSearchRouteResultController")
+        print(segue.identifier)
     }
     
     

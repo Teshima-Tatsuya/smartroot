@@ -27,8 +27,6 @@ class mySegue: UIStoryboardSegue {
 
         // Animate the transition.
         UIView.animateWithDuration(0.4, animations: { () -> Void in
-            //遷移前のビューを現在の位置から画面幅分移動する
-            firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
             //遷移後のビューを現在の位置(画面外)から画面幅分移動する
             secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
             }) { (Finished) -> Void in
