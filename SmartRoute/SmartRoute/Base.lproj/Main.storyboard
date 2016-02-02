@@ -133,6 +133,66 @@
             </objects>
             <point key="canvasLocation" x="1798" y="1189"/>
         </scene>
+        <!--Spot Save View Controller-->
+        <scene sceneID="SpN-Dg-cNZ">
+            <objects>
+                <viewController id="CFf-6W-Aac" customClass="spotSaveViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pIX-fC-mRg"/>
+                        <viewControllerLayoutGuide type="bottom" id="8tJ-Vb-ImN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgG-tM-cxd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wll-zo-NHl">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Xjg-EV-fWN"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="ルート保存" id="deO-9B-6EZ">
+                                        <barButtonItem key="rightBarButtonItem" title="保存" id="jB4-xb-SSg"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-Tk-ddr">
+                                <rect key="frame" x="20" y="89" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-fc-WAj">
+                                <rect key="frame" x="20" y="124" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Zg-nfY">
+                                <rect key="frame" x="0.0" y="172" width="320" height="158"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoE-To-rHE">
+                                <rect key="frame" x="20" y="344" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wll-zo-NHl" firstAttribute="leading" secondItem="kgG-tM-cxd" secondAttribute="leadingMargin" constant="-20" id="Rd4-sa-d5c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wll-zo-NHl" secondAttribute="trailing" constant="-20" id="eE8-sN-if6"/>
+                            <constraint firstItem="Wll-zo-NHl" firstAttribute="top" secondItem="kgG-tM-cxd" secondAttribute="topMargin" id="od8-q6-kgI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="spotTitle" destination="6o2-fc-WAj" id="ewj-Fb-bSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deh-Qv-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="-198"/>
+        </scene>
         <!--Search Spot Result Controller-->
         <scene sceneID="QkT-3b-oZ9">
             <objects>
@@ -144,13 +204,21 @@
                     <view key="view" contentMode="scaleToFill" id="hDy-1g-epS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タップした場所の検索結果を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncv-b5-oDI">
+                                <rect key="frame" x="27" y="59" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOh-b0-NjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408" y="-131"/>
+            <point key="canvasLocation" x="1422" y="-877"/>
         </scene>
         <!--My Spot View Controller-->
         <scene sceneID="dzT-oQ-Tca">
@@ -373,7 +441,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="GSs-Th-EO4">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="tKY-jC-0Qc"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="tKY-jC-0Qc">
+                                            <connections>
+                                                <segue destination="CFf-6W-Aac" kind="show" id="S2P-m2-eBy"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -393,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXD-kx-aNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="-131"/>
+            <point key="canvasLocation" x="1030" y="-459"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYq-Dc-5WJ">

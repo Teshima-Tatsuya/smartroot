@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6046635E1C59109500C67D1D /* mySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046635D1C59109500C67D1D /* mySegue.swift */; };
 		605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */; };
+		60840E501C5FA8450030714F /* spotSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60840E4F1C5FA8450030714F /* spotSaveViewController.swift */; };
 		60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B45C0A1C56654A008A4D1B /* testImage.jpg */; };
 		60F059971C5118860097261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059961C5118860097261B /* AppDelegate.swift */; };
 		60F0599C1C5118860097261B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599A1C5118860097261B /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		6046635D1C59109500C67D1D /* mySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mySegue.swift; sourceTree = "<group>"; };
 		605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		60840E4F1C5FA8450030714F /* spotSaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveViewController.swift; sourceTree = "<group>"; };
 		60B45C0A1C56654A008A4D1B /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
 		60F059931C5118860097261B /* SmartRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F059961C5118860097261B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				60F059961C5118860097261B /* AppDelegate.swift */,
 				60F0599A1C5118860097261B /* Main.storyboard */,
+				60840E4F1C5FA8450030714F /* spotSaveViewController.swift */,
 				605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */,
 				60F059C61C5130A30097261B /* SearchSpotResultController.swift */,
 				60F059C41C512FB60097261B /* SettingViewController.swift */,
@@ -262,6 +265,7 @@
 				60F059BF1C51260D0097261B /* MyRouteViewController.swift in Sources */,
 				60F059C11C51261D0097261B /* MyRouteTableViewController.swift in Sources */,
 				60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */,
+				60840E501C5FA8450030714F /* spotSaveViewController.swift in Sources */,
 				60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */,
 				605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */,
 				60F059B51C511E500097261B /* MySpotTableViewController.swift in Sources */,
