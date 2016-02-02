@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		6046635E1C59109500C67D1D /* mySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046635D1C59109500C67D1D /* mySegue.swift */; };
 		605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */; };
-		60840E501C5FA8450030714F /* spotSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60840E4F1C5FA8450030714F /* spotSaveViewController.swift */; };
 		60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B45C0A1C56654A008A4D1B /* testImage.jpg */; };
+		60B4CF9D1C60F21500350949 /* spotTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B4CF9C1C60F21500350949 /* spotTest.jpg */; };
+		60B4CFA31C60F67100350949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B4CFA11C60F67100350949 /* Main.storyboard */; };
+		60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */; };
+		60B4CFA91C60FEC600350949 /* spotSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4CFA81C60FEC600350949 /* spotSaveViewController.swift */; };
 		60F059971C5118860097261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059961C5118860097261B /* AppDelegate.swift */; };
-		60F0599C1C5118860097261B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599A1C5118860097261B /* Main.storyboard */; };
 		60F0599E1C5118860097261B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599D1C5118860097261B /* Assets.xcassets */; };
 		60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599F1C5118860097261B /* LaunchScreen.storyboard */; };
 		60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059A81C511A7C0097261B /* SearchSpotController.swift */; };
@@ -32,11 +34,13 @@
 /* Begin PBXFileReference section */
 		6046635D1C59109500C67D1D /* mySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mySegue.swift; sourceTree = "<group>"; };
 		605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
-		60840E4F1C5FA8450030714F /* spotSaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveViewController.swift; sourceTree = "<group>"; };
 		60B45C0A1C56654A008A4D1B /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
+		60B4CF9C1C60F21500350949 /* spotTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotTest.jpg; sourceTree = "<group>"; };
+		60B4CFA21C60F67100350949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveCommentViewController.swift; sourceTree = "<group>"; };
+		60B4CFA81C60FEC600350949 /* spotSaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveViewController.swift; sourceTree = "<group>"; };
 		60F059931C5118860097261B /* SmartRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F059961C5118860097261B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60F0599B1C5118860097261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60F0599D1C5118860097261B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F059A01C5118860097261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F059A21C5118860097261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,9 +102,10 @@
 		60F059951C5118860097261B /* SmartRoute */ = {
 			isa = PBXGroup;
 			children = (
+				60B4CFA81C60FEC600350949 /* spotSaveViewController.swift */,
+				60B4CFA11C60F67100350949 /* Main.storyboard */,
 				60F059961C5118860097261B /* AppDelegate.swift */,
-				60F0599A1C5118860097261B /* Main.storyboard */,
-				60840E4F1C5FA8450030714F /* spotSaveViewController.swift */,
+				60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */,
 				605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */,
 				60F059C61C5130A30097261B /* SearchSpotResultController.swift */,
 				60F059C41C512FB60097261B /* SettingViewController.swift */,
@@ -109,6 +114,7 @@
 				60F059C01C51261D0097261B /* MyRouteTableViewController.swift */,
 				60F059BA1C5120B50097261B /* SearchRouteResultController.swift */,
 				60B45C0A1C56654A008A4D1B /* testImage.jpg */,
+				60B4CF9C1C60F21500350949 /* spotTest.jpg */,
 				60F059B81C51206C0097261B /* SearchRouteController.swift */,
 				60F059B41C511E500097261B /* MySpotTableViewController.swift */,
 				60F059B61C511E8D0097261B /* CAPSPageMenu.swift */,
@@ -165,7 +171,7 @@
 				TargetAttributes = {
 					60F059921C5118860097261B = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = N3KM7N6NWV;
+						DevelopmentTeam = 3S9SM8SJ3H;
 					};
 				};
 			};
@@ -193,9 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */,
+				60B4CFA31C60F67100350949 /* Main.storyboard in Resources */,
 				60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */,
+				60B4CF9D1C60F21500350949 /* spotTest.jpg in Resources */,
 				60F0599E1C5118860097261B /* Assets.xcassets in Resources */,
-				60F0599C1C5118860097261B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +272,9 @@
 				60F059BF1C51260D0097261B /* MyRouteViewController.swift in Sources */,
 				60F059C11C51261D0097261B /* MyRouteTableViewController.swift in Sources */,
 				60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */,
-				60840E501C5FA8450030714F /* spotSaveViewController.swift in Sources */,
+				60B4CFA91C60FEC600350949 /* spotSaveViewController.swift in Sources */,
 				60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */,
+				60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */,
 				605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */,
 				60F059B51C511E500097261B /* MySpotTableViewController.swift in Sources */,
 			);
@@ -275,10 +283,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		60F0599A1C5118860097261B /* Main.storyboard */ = {
+		60B4CFA11C60F67100350949 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				60F0599B1C5118860097261B /* Base */,
+				60B4CFA21C60F67100350949 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -384,7 +392,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.SmartRoute.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -399,7 +407,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.SmartRoute.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
