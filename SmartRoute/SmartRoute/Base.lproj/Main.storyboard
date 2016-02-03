@@ -425,7 +425,9 @@
                                     <constraint firstAttribute="height" constant="65" id="F1i-SU-vcN"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="AeE-uk-GVr"/>
+                                    <navigationItem title="Title" id="AeE-uk-GVr">
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="kL4-c8-Eai"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFu-FG-XGD">
