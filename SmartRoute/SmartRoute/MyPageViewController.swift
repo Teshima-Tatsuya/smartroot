@@ -73,5 +73,8 @@ class MyPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    @IBAction func unwindToSubject2(segue:UIStoryboardSegue){
+        print(segue.identifier)
+    }
+     
 }
