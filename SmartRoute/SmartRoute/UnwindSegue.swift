@@ -19,7 +19,8 @@ class UnwindSegue: UIStoryboardSegue {
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         let screenWidth = UIScreen.mainScreen().bounds.size.width
         //戻った先のビューを画面外に設置する。
-        firstVCView.frame = CGRectMake(-screenWidth, 70.0, screenWidth, screenHeight)
+//        firstVCView.frame = CGRectMake(-screenWidth, 70.0, screenWidth, screenHeight)
+        print(firstVCView.frame)
         //戻った先のビューを現在の画面の上にのせる
         let window = UIApplication.sharedApplication().keyWindow
         window?.insertSubview(secondVCView, aboveSubview: firstVCView)
@@ -30,7 +31,7 @@ class UnwindSegue: UIStoryboardSegue {
                 //現在のビューを画面外に移動させる。
                 secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
                 //戻った先のビューを画面上に移動させる。
-                firstVCView.frame = CGRectOffset(firstVCView.frame, screenWidth, 0.0)
+                firstVCView.frame = CGRectOffset(firstVCView.frame, 30, 0.0)
             },
             completion: { (finished: Bool) -> Void in
                 //現在の画面を閉じる

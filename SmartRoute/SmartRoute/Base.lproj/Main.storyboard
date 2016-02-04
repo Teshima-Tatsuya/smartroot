@@ -106,7 +106,7 @@
                                     <navigationItem title="Title" id="FZR-ql-CLO">
                                         <barButtonItem key="leftBarButtonItem" image="back" id="gzg-0Y-Zm5">
                                             <connections>
-                                                <segue destination="64A-RE-Ggl" kind="unwind" unwindAction="unwindToSubject2:" id="R3z-4n-1WW"/>
+                                                <segue destination="64A-RE-Ggl" kind="unwind" customClass="UnwindSegue" customModule="SmartRoute" customModuleProvider="target" unwindAction="unwindToSubject2:" id="R3z-4n-1WW"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
