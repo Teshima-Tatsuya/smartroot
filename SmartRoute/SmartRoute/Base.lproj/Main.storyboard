@@ -353,6 +353,15 @@
                     <view key="view" contentMode="scaleToFill" id="ow9-aB-21i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvt-GU-69q">
+                                <rect key="frame" x="137" y="222" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="SLr-jh-c8U" kind="custom" customClass="PushNoAnimationSegue" id="KBv-mZ-RFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="config" id="b83-4x-QVD"/>
@@ -361,6 +370,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAb-nW-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1051" y="2468"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="FNG-xN-EfP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Test" id="SLr-jh-c8U" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVf-dE-K2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380.5" y="2444"/>
         </scene>
         <!--Spot-->
         <scene sceneID="TxV-ln-L3C">
