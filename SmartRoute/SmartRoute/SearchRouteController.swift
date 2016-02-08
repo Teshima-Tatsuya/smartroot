@@ -5,8 +5,9 @@
 //  Created by kazuki nishimura on 2016/01/21.
 //  Copyright © 2016年 kazuki nishimura. All rights reserved.
 //
-
+import Alamofire
 import UIKit
+import GoogleMaps
 
 class SearchRouteController: UIViewController {
     
@@ -39,6 +40,16 @@ class SearchRouteController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
         let SearchRouteResult:SearchRouteResultController = segue.destinationViewController as! SearchRouteResultController
         
+        let params =
+        [
+            "origin":"東京",
+            "destination":"福岡",
+            "waypoints":["location":"長野","location":"静岡"]
+        ]
+        Alamofire.request(.GET,"https://maps.googleapis.com/maps/api/directions/json?",parameters: params).responseJSON{ response in
+            print(response)
+            
+        }
         SearchRouteResult.Route1 = RouteTextField1.text!
         SearchRouteResult.Route2 = RouteTextField2.text!
         SearchRouteResult.Route3 = RouteTextField3.text!

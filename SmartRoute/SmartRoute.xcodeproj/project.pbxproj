@@ -29,6 +29,10 @@
 		60F059C51C512FB60097261B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C41C512FB60097261B /* SettingViewController.swift */; };
 		60F059C71C5130A30097261B /* SearchSpotResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C61C5130A30097261B /* SearchSpotResultController.swift */; };
 		AA3795AE628AD55A48FDDA82 /* Pods_SmartRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF4C2A25BF4F23B6F336764 /* Pods_SmartRoute.framework */; };
+		BA0B57821C638D5400C33844 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0B57811C638D5400C33844 /* Test.storyboard */; };
+		BA0B578B1C67263200C33844 /* FlipSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B578A1C67263200C33844 /* FlipSegue.swift */; };
+		BA0B578D1C67290D00C33844 /* PushNoAnimationSeuge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B578C1C67290D00C33844 /* PushNoAnimationSeuge.swift */; };
+		BA0B578F1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B578E1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		60F059C41C512FB60097261B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		60F059C61C5130A30097261B /* SearchSpotResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSpotResultController.swift; sourceTree = "<group>"; };
 		9AF4C2A25BF4F23B6F336764 /* Pods_SmartRoute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0B57811C638D5400C33844 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		BA0B578A1C67263200C33844 /* FlipSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipSegue.swift; path = CustomSegue/FlipSegue.swift; sourceTree = "<group>"; };
+		BA0B578C1C67290D00C33844 /* PushNoAnimationSeuge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushNoAnimationSeuge.swift; path = CustomSegue/PushNoAnimationSeuge.swift; sourceTree = "<group>"; };
+		BA0B578E1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionFlipFromLeftSegue.swift; path = CustomSegue/TransitionFlipFromLeftSegue.swift; sourceTree = "<group>"; };
 		DB1283CFD25DF2E6DFFCEA93 /* Pods-SmartRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoute.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoute/Pods-SmartRoute.release.xcconfig"; sourceTree = "<group>"; };
 		F96D453B45128BEA97DE9E4E /* Pods-SmartRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoute/Pods-SmartRoute.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +110,7 @@
 		60F059951C5118860097261B /* SmartRoute */ = {
 			isa = PBXGroup;
 			children = (
+				BA0B57891C6725C200C33844 /* CustomSegue */,
 				60B4CFA81C60FEC600350949 /* spotSaveViewController.swift */,
 				60B4CFA11C60F67100350949 /* Main.storyboard */,
 				60F059961C5118860097261B /* AppDelegate.swift */,
@@ -124,8 +133,19 @@
 				60F0599F1C5118860097261B /* LaunchScreen.storyboard */,
 				60F059A21C5118860097261B /* Info.plist */,
 				6046635D1C59109500C67D1D /* mySegue.swift */,
+				BA0B57811C638D5400C33844 /* Test.storyboard */,
 			);
 			path = SmartRoute;
+			sourceTree = "<group>";
+		};
+		BA0B57891C6725C200C33844 /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				BA0B578C1C67290D00C33844 /* PushNoAnimationSeuge.swift */,
+				BA0B578A1C67263200C33844 /* FlipSegue.swift */,
+				BA0B578E1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift */,
+			);
+			name = CustomSegue;
 			sourceTree = "<group>";
 		};
 		F14894CD4D1E9F9734BB666F /* Frameworks */ = {
@@ -171,7 +191,7 @@
 				TargetAttributes = {
 					60F059921C5118860097261B = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 3S9SM8SJ3H;
+						DevelopmentTeam = N3KM7N6NWV;
 					};
 				};
 			};
@@ -198,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0B57821C638D5400C33844 /* Test.storyboard in Resources */,
 				60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */,
 				60B4CFA31C60F67100350949 /* Main.storyboard in Resources */,
 				60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */,
@@ -262,8 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F059C31C5129380097261B /* MyPageViewController.swift in Sources */,
+				BA0B578B1C67263200C33844 /* FlipSegue.swift in Sources */,
 				60F059B31C511E320097261B /* MYSpotViewController.swift in Sources */,
 				60F059C51C512FB60097261B /* SettingViewController.swift in Sources */,
+				BA0B578F1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift in Sources */,
 				60F059B91C51206C0097261B /* SearchRouteController.swift in Sources */,
 				60F059C71C5130A30097261B /* SearchSpotResultController.swift in Sources */,
 				60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */,
@@ -275,6 +298,7 @@
 				60B4CFA91C60FEC600350949 /* spotSaveViewController.swift in Sources */,
 				60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */,
 				60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */,
+				BA0B578D1C67290D00C33844 /* PushNoAnimationSeuge.swift in Sources */,
 				605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */,
 				60F059B51C511E500097261B /* MySpotTableViewController.swift in Sources */,
 			);
@@ -392,7 +416,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -407,7 +431,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
