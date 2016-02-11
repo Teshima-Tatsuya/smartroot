@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import GoogleMaps
 
 class SearchRouteResultController: UIViewController {
     
@@ -17,21 +19,52 @@ class SearchRouteResultController: UIViewController {
     @IBOutlet weak var RouteResult3: UILabel!
     @IBOutlet weak var RouteResult4: UILabel!
     
-    var Route1:String = ""
-    var Route2:String = ""
-    var Route3:String = ""
-    var Route4:String = ""
-    var Route5:String = ""
-    var Route6:String = ""
+    var Route:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.RouteResult1.text = self.Route1
-        self.RouteResult2.text = self.Route2
-        self.RouteResult3.text = self.Route3
-        self.RouteResult4.text = self.Route4
+        var tmp: [String] = []
+        tmp.append(Route[0])
+        var params = [String: AnyObject]()
         
+        for i in 1...5{
+            if(Route[i] != ""){
+                tmp.append(Route[i])
+            }
+        }
+        if(tmp.count == 2){
+            params["origin"] = tmp[0]
+            params["destination"] = tmp[1]
+        }else if(tmp.count > 2){
+//            params["origin"] = tmp[0]
+//            params["destination"] = tmp[tmp.count-1]
+//            params["waypoints"] = tmp[1...tmp.count-2]
+            params = [
+                "origin":tmp[0],
+                "destination":tmp[tmp.count-1],
+            ]
+            tmp.removeLast()
+            tmp.removeAtIndex(0)
+            params["waypoints"] = tmp
+
+        }
+        
+        //params[]
+        /*
+        let params =
+        [
+            "origin":self.Route1,
+            "destination":"福岡",
+            "waypoints":["location":"長野","location":"静岡"]
+        ]
+        */
+        
+        Alamofire.request(.GET,"https://maps.googleapis.com/maps/api/directions/json?",parameters: params).responseJSON{ response in
+            print(response)
+            
+        }
+
     }
     
     override func didReceiveMemoryWarning() {
