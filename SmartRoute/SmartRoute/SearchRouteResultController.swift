@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import GoogleMaps
+import SwiftyJSON
 
 class SearchRouteResultController: UIViewController {
     
@@ -19,52 +20,77 @@ class SearchRouteResultController: UIViewController {
     @IBOutlet weak var RouteResult3: UILabel!
     @IBOutlet weak var RouteResult4: UILabel!
     
+    // 画面遷移受け取りよう変数
     var Route:[String] = []
+    
+    var StepArticles:[[String: JSON]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // 画面背に元からのデータを受け取る
         var tmp: [String] = []
         tmp.append(Route[0])
+
+        // API送信用データ初期化
         var params = [String: AnyObject]()
         
+        // [仮]まず全テキストフィールドからデータを全部取り込む
         for i in 1...5{
             if(Route[i] != ""){
                 tmp.append(Route[i])
             }
         }
+        // [仮]2つしかない場合はwaypoints無しVerでパラメータ作成
         if(tmp.count == 2){
             params["origin"] = tmp[0]
             params["destination"] = tmp[1]
-        }else if(tmp.count > 2){
-//            params["origin"] = tmp[0]
-//            params["destination"] = tmp[tmp.count-1]
-//            params["waypoints"] = tmp[1...tmp.count-2]
+        }else if(tmp.count > 2){    // 2つ以上はwaypoints入り
             params = [
                 "origin":tmp[0],
                 "destination":tmp[tmp.count-1],
             ]
+            // [仮]出発地と終着点を削除した残りが全て経由地点
             tmp.removeLast()
             tmp.removeAtIndex(0)
             params["waypoints"] = tmp
 
         }
-        
-        //params[]
-        /*
-        let params =
-        [
-            "origin":self.Route1,
-            "destination":"福岡",
-            "waypoints":["location":"長野","location":"静岡"]
-        ]
-        */
-        
+
+        // google direction api にリクエストとレスポンス受信
         Alamofire.request(.GET,"https://maps.googleapis.com/maps/api/directions/json?",parameters: params).responseJSON{ response in
-            print(response)
+//            print(response)
+            // 受け取ったら即座にエラー調査した後SwiftyJSONでJSON形式を整える
+            guard let objects = response.result.value else {
+                return
+            }
+            let tmpdata = JSON(objects)
+            let mapdata = tmpdata["routes"][0]["legs"][0]["steps"]
+            // 経路一覧を作成するための処理 TODO 作成中
+            print(mapdata["start_address"])
+            
+            for i in 0...mapdata.count-1{
+                let tmpmap = mapdata[i]
+                var article: [String:JSON] = [
+                    "html": tmpmap["html_instructions"]
+                ]
+                article["distance"] = tmpmap["distance"]
+                article["maneuver"] = tmpmap["maneuver"]
+                article["start"] = tmpmap["start_location"]
+                article["travel_mode"] = tmpmap["travel_mode"]
+                article["end"] = tmpmap["end_location"]
+                article["duration"] = tmpmap["duration"]
+                article["polyline"] = tmpmap["polyline"]
+                
+                self.StepArticles.append(article)
+            //print(mapdata["routes"][0]["legs"][0]["steps"][i])
+                
+            }
+            
+            print(self.StepArticles)
             
         }
-
+        
     }
     
     override func didReceiveMemoryWarning() {
