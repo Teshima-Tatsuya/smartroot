@@ -398,7 +398,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="GSs-Th-EO4">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="tKY-jC-0Qc"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="tKY-jC-0Qc">
+                                            <connections>
+                                                <segue destination="Euw-DL-I43" kind="show" id="AQy-lI-Zbi"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
