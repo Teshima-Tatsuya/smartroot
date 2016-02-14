@@ -448,7 +448,11 @@
                                                 <segue destination="7no-mx-stq" kind="unwind" unwindAction="backFromSpotSaveView:" id="GIY-kl-zad"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="iT5-cp-m13"/>
+                                        <barButtonItem key="rightBarButtonItem" title="次へ" id="iT5-cp-m13">
+                                            <connections>
+                                                <segue destination="pBU-Bd-quF" kind="show" id="pvN-cW-y8V"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -459,7 +463,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-4D-l3C">
-                                <rect key="frame" x="-2" y="112" width="324" height="407"/>
+                                <rect key="frame" x="-2" y="104" width="324" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -481,6 +485,62 @@
                 <exit id="7no-mx-stq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1427" y="-219"/>
+        </scene>
+        <!--Spot Save Photo View Controller-->
+        <scene sceneID="WJK-uT-zHr">
+            <objects>
+                <viewController id="pBU-Bd-quF" customClass="spotSavePhotoViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m8a-m7-hlC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SA6-Mh-L9i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S1H-dx-wPi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-Sh-bUr">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="weE-nx-rVh"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="カメラ" id="zcw-re-qwp">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="sWE-Q8-hgW">
+                                            <connections>
+                                                <segue destination="ZeJ-Fc-tqU" kind="unwind" unwindAction="backFromSpotSavePhotoView:" id="9Ch-TU-S15"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="daK-XG-4IN"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzS-K1-ZSz">
+                                <rect key="frame" x="6" y="150" width="308" height="361"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spY-X6-UWg">
+                                <rect key="frame" x="135" y="84" width="51" height="42"/>
+                                <state key="normal" title="Button" image="libraryPhoto"/>
+                                <connections>
+                                    <action selector="importImage:" destination="pBU-Bd-quF" eventType="touchUpInside" id="ei0-e0-Z3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gzh-Sh-bUr" firstAttribute="top" secondItem="S1H-dx-wPi" secondAttribute="topMargin" id="TXa-ZQ-0M1"/>
+                            <constraint firstItem="gzh-Sh-bUr" firstAttribute="leading" secondItem="S1H-dx-wPi" secondAttribute="leadingMargin" constant="-20" id="jnC-Cl-7j5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gzh-Sh-bUr" secondAttribute="trailing" constant="-20" id="lMw-FG-yGv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="importedImage" destination="fzS-K1-ZSz" id="KFv-iA-gbT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dp-yr-GEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZeJ-Fc-tqU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="-219"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYq-Dc-5WJ">
@@ -526,6 +586,7 @@
     <resources>
         <image name="back" width="32" height="32"/>
         <image name="config" width="32" height="32"/>
+        <image name="libraryPhoto" width="52" height="42"/>
         <image name="route" width="22" height="32"/>
         <image name="spot" width="32" height="32"/>
         <image name="user" width="32" height="32"/>

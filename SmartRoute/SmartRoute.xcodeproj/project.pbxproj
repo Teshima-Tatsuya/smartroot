@@ -13,6 +13,7 @@
 		60B4CF9D1C60F21500350949 /* spotTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B4CF9C1C60F21500350949 /* spotTest.jpg */; };
 		60B4CFA31C60F67100350949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B4CFA11C60F67100350949 /* Main.storyboard */; };
 		60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */; };
+		60DE195E1C70C6B300293922 /* spotSavePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE195D1C70C6B300293922 /* spotSavePhotoViewController.swift */; };
 		60F059971C5118860097261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059961C5118860097261B /* AppDelegate.swift */; };
 		60F0599E1C5118860097261B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599D1C5118860097261B /* Assets.xcassets */; };
 		60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599F1C5118860097261B /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 		60B4CF9C1C60F21500350949 /* spotTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotTest.jpg; sourceTree = "<group>"; };
 		60B4CFA21C60F67100350949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveCommentViewController.swift; sourceTree = "<group>"; };
+		60DE195D1C70C6B300293922 /* spotSavePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSavePhotoViewController.swift; sourceTree = "<group>"; };
 		60F059931C5118860097261B /* SmartRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F059961C5118860097261B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60F0599D1C5118860097261B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				BA0B57901C6CC24B00C33844 /* Controller */,
 				BA0B57891C6725C200C33844 /* CustomSegue */,
 				60B4CFA11C60F67100350949 /* Main.storyboard */,
+				60DE195D1C70C6B300293922 /* spotSavePhotoViewController.swift */,
 				60F059961C5118860097261B /* AppDelegate.swift */,
 				60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */,
 				605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */,
@@ -207,7 +210,7 @@
 				TargetAttributes = {
 					60F059921C5118860097261B = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = N3KM7N6NWV;
+						DevelopmentTeam = 3S9SM8SJ3H;
 					};
 				};
 			};
@@ -316,6 +319,7 @@
 				60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */,
 				BA0B578D1C67290D00C33844 /* PushNoAnimationSeuge.swift in Sources */,
 				605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */,
+				60DE195E1C70C6B300293922 /* spotSavePhotoViewController.swift in Sources */,
 				60F059B51C511E500097261B /* MySpotTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +436,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -447,7 +451,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartroute.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartroute.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -41,11 +41,6 @@ class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
         
         spotSaveComment.inputAccessoryView = myKeyboard
         
-        //カメラボタンの設定
-        photoButton.setImage(photoImage, forState: .Normal)
-        photoButton.addTarget(self, action: "tapped", forControlEvents: .TouchUpInside)
-        myKeyboard.addSubview(photoButton)
-        
         
     }
     
@@ -64,6 +59,10 @@ class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         self.view.endEditing(true)
+    }
+    
+    @IBAction func backFromSpotSavePhotoView(segue:UIStoryboardSegue){
+        
     }
     
     
