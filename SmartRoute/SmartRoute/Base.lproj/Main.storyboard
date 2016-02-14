@@ -445,10 +445,10 @@
                                     <navigationItem title="コメント" id="ez0-hG-lyV">
                                         <barButtonItem key="leftBarButtonItem" title="キャンセル" id="p2x-45-0rT">
                                             <connections>
-                                                <segue destination="7no-mx-stq" kind="unwind" unwindAction="unwindToSpotSave:" id="BzA-uK-XtB"/>
+                                                <segue destination="7no-mx-stq" kind="unwind" unwindAction="backFromSpotSaveView:" id="GIY-kl-zad"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="完了" id="iT5-cp-m13"/>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="iT5-cp-m13"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -459,7 +459,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-4D-l3C">
-                                <rect key="frame" x="-2" y="112" width="324" height="456"/>
+                                <rect key="frame" x="-2" y="112" width="324" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

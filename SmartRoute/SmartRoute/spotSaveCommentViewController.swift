@@ -7,6 +7,9 @@
 //
 
 import UIKit
+let closeButton = UIButton(frame: CGRectMake(10, 5, 70, 30))
+let photoImage = UIImage(named: "photo")
+let photoButton = UIButton(frame: CGRectMake(70, 5, 70, 30))
 
 class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
     
@@ -15,9 +18,43 @@ class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.spotSaveComment.delegate = self 
+        self.spotSaveComment.delegate = self
+        
+        addKey()
+        
         
     }
+    
+    func addKey(){
+        
+        let width = UIScreen.mainScreen().bounds.width
+        
+        let myKeyboard = UIView(frame: CGRectMake(0, 0, width, 40))
+        myKeyboard.backgroundColor = UIColor.whiteColor()
+        
+        //完了ボタンの設定
+        closeButton.backgroundColor = UIColor.darkGrayColor()
+        closeButton.setTitle("閉じる", forState: .Normal)
+        closeButton.layer.cornerRadius = 2.0
+        closeButton.addTarget(self, action: "onClickCloseButton:", forControlEvents: .TouchUpInside)
+        myKeyboard.addSubview(closeButton)
+        
+        spotSaveComment.inputAccessoryView = myKeyboard
+        
+        //カメラボタンの設定
+        photoButton.setImage(photoImage, forState: .Normal)
+        photoButton.addTarget(self, action: "tapped", forControlEvents: .TouchUpInside)
+        myKeyboard.addSubview(photoButton)
+        
+        
+    }
+    
+    func onClickCloseButton (sender: UIButton){
+        
+        self.view.endEditing(true)
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

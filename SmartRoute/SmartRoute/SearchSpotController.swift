@@ -52,4 +52,8 @@ class SearchSpotController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backFromSpotSaveView(segue:UIStoryboardSegue){
+        
+    }
+    
 }
