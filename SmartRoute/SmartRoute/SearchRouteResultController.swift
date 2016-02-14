@@ -11,15 +11,11 @@ import Alamofire
 import GoogleMaps
 import SwiftyJSON
 
-class SearchRouteResultController: UIViewController {
+class SearchRouteResultController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet var tableView: UITableView!
   
-    @IBOutlet weak var RouteResult1: UILabel!
-    
-    @IBOutlet weak var RouteResult2: UILabel!
-    @IBOutlet weak var RouteResult3: UILabel!
-    @IBOutlet weak var RouteResult4: UILabel!
-    
+   
     // 画面遷移受け取りよう変数
     var Route:[String] = []
     
@@ -29,6 +25,7 @@ class SearchRouteResultController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // 画面背に元からのデータを受け取る
+        
         var tmp: [String] = []
         tmp.append(Route[0])
 
@@ -67,7 +64,7 @@ class SearchRouteResultController: UIViewController {
             let tmpdata = JSON(objects)
             let mapdata = tmpdata["routes"][0]["legs"][0]["steps"]
             // 経路一覧を作成するための処理 TODO 作成中
-            print(mapdata["start_address"])
+//            print(mapdata["start_address"])
             
             for i in 0...mapdata.count-1{
                 let tmpmap = mapdata[i]
@@ -87,12 +84,37 @@ class SearchRouteResultController: UIViewController {
                 
             }
             
-            print(self.StepArticles)
-            
+//            print(self.StepArticles)
+            self.tableView.reloadData()
         }
         
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return self.StepArticles.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("CustomViewCell", forIndexPath: indexPath)
+        
+        let title = tableView.viewWithTag(1) as! UILabel
+        title.text = self.StepArticles[indexPath.row]["html"]!.string
+        let routeText = tableView.viewWithTag(2) as! UILabel
+        routeText.text = self.StepArticles[indexPath.row]["duration"]!["text"].string
+        let addInfo = tableView.viewWithTag(3) as! UILabel
+        addInfo.text = self.StepArticles[indexPath.row]["distance"]!["text"].string
+        print(title.text)
+        print(routeText.text)
+        print(addInfo.text)
+        print("motodata")
+        print(self.StepArticles[indexPath.row]["html"]!.string)
+        print(self.StepArticles[indexPath.row]["duration"]!["text"].string)
+        print(self.StepArticles[indexPath.row]["distance"]!["text"].string)
+        print("motodata-owari")
+        
+        return cell
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
