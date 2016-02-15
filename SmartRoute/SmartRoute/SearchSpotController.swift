@@ -8,17 +8,21 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
-class SearchSpotController: UIViewController {
+class SearchSpotController: UIViewController,CLLocationManagerDelegate
+{
     
     @IBOutlet var nav: UINavigationBar!
     
     @IBOutlet var searchSpot: UITextField!
     var googleMap : GMSMapView!
     
+    var locationManager:CLLocationManager
+    
     //緯度経度 -> 金沢駅
-    let latitude: CLLocationDegrees = 36.5780574
-    let longitude: CLLocationDegrees = 136.6486596
+    var latitude: CLLocationDegrees = 36.5780574
+    var longitude: CLLocationDegrees = 136.6486596
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +54,14 @@ class SearchSpotController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getLocation() {
+        // 現在地の取得
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+        
     }
     
 }

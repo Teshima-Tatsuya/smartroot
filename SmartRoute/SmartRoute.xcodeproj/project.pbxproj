@@ -64,6 +64,7 @@
 		BA0B578E1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionFlipFromLeftSegue.swift; path = CustomSegue/TransitionFlipFromLeftSegue.swift; sourceTree = "<group>"; };
 		BA0B57911C6CC2BF00C33844 /* TestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestController.swift; path = Controller/TestController.swift; sourceTree = "<group>"; };
 		BA0B57941C6CC53C00C33844 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Test.storyboard; path = Storyboard/Test.storyboard; sourceTree = "<group>"; };
+		BA0B57961C72117200C33844 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DB1283CFD25DF2E6DFFCEA93 /* Pods-SmartRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoute.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoute/Pods-SmartRoute.release.xcconfig"; sourceTree = "<group>"; };
 		F96D453B45128BEA97DE9E4E /* Pods-SmartRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRoute/Pods-SmartRoute.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +168,7 @@
 		F14894CD4D1E9F9734BB666F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA0B57961C72117200C33844 /* CoreLocation.framework */,
 				9AF4C2A25BF4F23B6F336764 /* Pods_SmartRoute.framework */,
 			);
 			name = Frameworks;
