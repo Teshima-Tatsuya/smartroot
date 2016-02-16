@@ -91,4 +91,8 @@ class SearchSpotController: UIViewController,CLLocationManagerDelegate
         print("位置情報取得に失敗しました")
     }
     
+    @IBAction func backFromSpotSaveView(segue:UIStoryboardSegue){
+        
+    }
+    
 }
