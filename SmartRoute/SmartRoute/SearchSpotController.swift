@@ -8,21 +8,29 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
-class SearchSpotController: UIViewController {
+class SearchSpotController: UIViewController,CLLocationManagerDelegate
+{
     
     @IBOutlet var nav: UINavigationBar!
     
     @IBOutlet var searchSpot: UITextField!
     var googleMap : GMSMapView!
     
+    var locationManager:CLLocationManager! = nil
+    
     //緯度経度 -> 金沢駅
-    let latitude: CLLocationDegrees = 36.5780574
-    let longitude: CLLocationDegrees = 136.6486596
+    var latitude: CLLocationDegrees! = 36.5780574
+    var longitude: CLLocationDegrees! = 136.6486596
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //位置情報を取得
+        getLocation()
+        locationManager.startUpdatingLocation()
         
         // 初期倍率
         let zoom: Float = 15
@@ -50,6 +58,37 @@ class SearchSpotController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getLocation() {
+        // 現在地の取得
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+        // 位置情報の許可ステータスを取得
+        let status = CLLocationManager.authorizationStatus()
+        
+        // まだ認証が得られていない場合は、認証ダイアログを表示.
+        if(status == CLAuthorizationStatus.NotDetermined) {
+            self.locationManager.requestAlwaysAuthorization()
+        }
+        
+        // 取得精度の設定.
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        // 取得頻度の設定(ミリ秒).
+        locationManager.distanceFilter = 100
+    }
+    
+    // 位置情報取得に成功したときに呼び出されるデリゲート.
+    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!){
+        latitude = newLocation.coordinate.latitude
+        longitude = newLocation.coordinate.longitude
+        
+    }
+    
+    // 位置情報取得に失敗した時に呼び出されるデリゲート.
+    func locationManager(manager: CLLocationManager!,didFailWithError error: NSError!){
+        print("位置情報取得に失敗しました")
     }
     
     @IBAction func backFromSpotSaveView(segue:UIStoryboardSegue){

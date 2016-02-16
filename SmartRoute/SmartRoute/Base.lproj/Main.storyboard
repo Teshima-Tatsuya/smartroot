@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFf-3I-qQo">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFf-3I-qQo">
+>>>>>>> 5f44ec4f47302b567af8e31ccf09e4d045a902ad
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -330,8 +334,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3F-dc-MtN">
+                                <rect key="frame" x="20" y="98" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSt-VG-vpn">
+                                <rect key="frame" x="20" y="153" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aik-Sz-lnz">
+                                <rect key="frame" x="20" y="206" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4W-Ff-txE">
+                                <rect key="frame" x="20" y="259" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-WN-WFB">
-                                <rect key="frame" x="13" y="71" width="90" height="30"/>
+                                <rect key="frame" x="115" y="400" width="90" height="30"/>
                                 <state key="normal" title="ルートを保存"/>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrL-Rb-qjm">
@@ -349,6 +377,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+<<<<<<< HEAD
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-a1-eCj">
                                 <rect key="frame" x="0.0" y="109" width="320" height="410"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -387,6 +416,8 @@
                                     <outlet property="delegate" destination="uii-SY-mru" id="rBW-RU-jOw"/>
                                 </connections>
                             </tableView>
+=======
+>>>>>>> 5f44ec4f47302b567af8e31ccf09e4d045a902ad
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -397,7 +428,10 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="tableView" destination="g8X-a1-eCj" id="vwz-lo-WWV"/>
+                        <outlet property="RouteResult1" destination="r3F-dc-MtN" id="4si-Fp-WE1"/>
+                        <outlet property="RouteResult2" destination="OSt-VG-vpn" id="Kdt-7U-KDL"/>
+                        <outlet property="RouteResult3" destination="aik-Sz-lnz" id="bQT-j3-PAa"/>
+                        <outlet property="RouteResult4" destination="A4W-Ff-txE" id="Ebx-lO-9WR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQp-Wx-fcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -508,14 +542,10 @@
                                     <navigationItem title="コメント" id="ez0-hG-lyV">
                                         <barButtonItem key="leftBarButtonItem" title="キャンセル" id="p2x-45-0rT">
                                             <connections>
-                                                <segue destination="7no-mx-stq" kind="unwind" unwindAction="backFromSpotSaveView:" id="GIY-kl-zad"/>
+                                                <segue destination="7no-mx-stq" kind="unwind" unwindAction="unwindToSpotSave:" id="BzA-uK-XtB"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="次へ" id="iT5-cp-m13">
-                                            <connections>
-                                                <segue destination="pBU-Bd-quF" kind="show" id="pvN-cW-y8V"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="完了" id="iT5-cp-m13"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -526,7 +556,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-4D-l3C">
-                                <rect key="frame" x="-2" y="104" width="324" height="415"/>
+                                <rect key="frame" x="-2" y="112" width="324" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -548,62 +578,6 @@
                 <exit id="7no-mx-stq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1427" y="-219"/>
-        </scene>
-        <!--Spot Save Photo View Controller-->
-        <scene sceneID="WJK-uT-zHr">
-            <objects>
-                <viewController id="pBU-Bd-quF" customClass="spotSavePhotoViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="m8a-m7-hlC"/>
-                        <viewControllerLayoutGuide type="bottom" id="SA6-Mh-L9i"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S1H-dx-wPi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-Sh-bUr">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="weE-nx-rVh"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="カメラ" id="zcw-re-qwp">
-                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="sWE-Q8-hgW">
-                                            <connections>
-                                                <segue destination="ZeJ-Fc-tqU" kind="unwind" unwindAction="backFromSpotSavePhotoView:" id="9Ch-TU-S15"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="daK-XG-4IN"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzS-K1-ZSz">
-                                <rect key="frame" x="6" y="150" width="308" height="361"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spY-X6-UWg">
-                                <rect key="frame" x="135" y="84" width="51" height="42"/>
-                                <state key="normal" title="Button" image="libraryPhoto"/>
-                                <connections>
-                                    <action selector="importImage:" destination="pBU-Bd-quF" eventType="touchUpInside" id="ei0-e0-Z3h"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gzh-Sh-bUr" firstAttribute="top" secondItem="S1H-dx-wPi" secondAttribute="topMargin" id="TXa-ZQ-0M1"/>
-                            <constraint firstItem="gzh-Sh-bUr" firstAttribute="leading" secondItem="S1H-dx-wPi" secondAttribute="leadingMargin" constant="-20" id="jnC-Cl-7j5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gzh-Sh-bUr" secondAttribute="trailing" constant="-20" id="lMw-FG-yGv"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="importedImage" destination="fzS-K1-ZSz" id="KFv-iA-gbT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4dp-yr-GEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ZeJ-Fc-tqU" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1806" y="-219"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYq-Dc-5WJ">
@@ -649,7 +623,6 @@
     <resources>
         <image name="back" width="32" height="32"/>
         <image name="config" width="32" height="32"/>
-        <image name="libraryPhoto" width="52" height="42"/>
         <image name="route" width="22" height="32"/>
         <image name="spot" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
