@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFf-3I-qQo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFf-3I-qQo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Mypage-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController title="Mypage" id="BYZ-38-t0r" customClass="MyPageViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="マイページ" image="user" id="I7S-vn-XUi"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1030" y="1189"/>
-        </scene>
         <!--My Route Table View Controller-->
         <scene sceneID="zce-18-yaH">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cb-d4-mcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MyRouteTable" id="Frr-gU-hKb" customClass="MyRouteTableViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qfa-uk-bCE"/>
@@ -46,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="28" width="328" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ep-Rz-ryq" id="aZX-yt-MIQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="81"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bie-Ny-9qL">
@@ -77,61 +58,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <segue destination="irW-XH-CY8" kind="custom" identifier="toRouteCell" customClass="mySegue" customModule="SmartRoute" customModuleProvider="target" id="a5f-xW-Ibw"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8cb-d4-mcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408" y="1189"/>
-        </scene>
-        <!--My Route View Controller-->
-        <scene sceneID="5RS-7y-Gce">
-            <objects>
-                <viewController storyboardIdentifier="MyRoute" id="irW-XH-CY8" customClass="MyRouteViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="w0j-pb-dmn"/>
-                        <viewControllerLayoutGuide type="bottom" id="XHN-a5-kp1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6aZ-0p-JYq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kad-jp-6EA">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="2s9-7G-8FX" userLabel="height = 65"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="FZR-ql-CLO">
-                                        <barButtonItem key="leftBarButtonItem" image="back" id="gzg-0Y-Zm5">
-                                            <connections>
-                                                <segue destination="64A-RE-Ggl" kind="unwind" customClass="UnwindSegue" customModule="SmartRoute" customModuleProvider="target" unwindAction="unwindToSubject2:" id="R3z-4n-1WW"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYw-bW-NYs">
-                                <rect key="frame" x="40" y="206" width="240" height="128"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="kad-jp-6EA" firstAttribute="leading" secondItem="6aZ-0p-JYq" secondAttribute="leadingMargin" constant="-20" id="S7T-Nx-peX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kad-jp-6EA" secondAttribute="trailing" constant="-20" id="n9q-sr-yi6"/>
-                            <constraint firstItem="kad-jp-6EA" firstAttribute="top" secondItem="6aZ-0p-JYq" secondAttribute="topMargin" id="tbc-wx-0Za"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="routeImage" destination="BYw-bW-NYs" id="gwR-oH-mbf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqu-PX-CP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="64A-RE-Ggl" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1798" y="1189"/>
+            <point key="canvasLocation" x="2159" y="1235"/>
         </scene>
         <!--Search Spot Result Controller-->
         <scene sceneID="QkT-3b-oZ9">
@@ -178,6 +107,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIi-ic-fdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1755" y="1845"/>
+        </scene>
+        <!--マイページ-->
+        <scene sceneID="pef-yD-FOt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yvz-dU-m2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="PTP-jK-r46" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="マイページ" image="user" id="uOA-dg-LSf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bpe-98-HeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3qa-Xk-wbi" kind="relationship" relationship="rootViewController" id="ee8-M3-GSV"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="685" y="1047"/>
+        </scene>
+        <!--My Page View Controller-->
+        <scene sceneID="lMR-Ol-qYH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1a-Kr-XDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3qa-Xk-wbi" customClass="MyPageViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yFQ-OF-Ncu"/>
+                        <viewControllerLayoutGuide type="bottom" id="xol-6V-bK7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZQp-fg-ZTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-gY-ppW">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="zap-wb-JBZ"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="j4p-XE-kT6"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TkW-9Z-aY1">
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="XYS-sc-0fn">
+                                        <rect key="frame" x="0.0" y="28" width="328" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XYS-sc-0fn" id="zZi-U7-g5M">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="h8e-qo-CDu" kind="show" id="UoX-Gq-PgF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3qa-Xk-wbi" id="Krc-cr-4eL"/>
+                                    <outlet property="delegate" destination="3qa-Xk-wbi" id="PgY-IX-28X"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FxU-gY-ppW" firstAttribute="leading" secondItem="ZQp-fg-ZTZ" secondAttribute="leadingMargin" constant="-20" id="0f1-h5-I8S"/>
+                            <constraint firstItem="FxU-gY-ppW" firstAttribute="top" secondItem="ZQp-fg-ZTZ" secondAttribute="topMargin" id="FVy-Wi-sZb"/>
+                            <constraint firstItem="TkW-9Z-aY1" firstAttribute="leading" secondItem="ZQp-fg-ZTZ" secondAttribute="leadingMargin" constant="-20" id="V5C-B4-yr2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FxU-gY-ppW" secondAttribute="trailing" constant="-20" id="cL1-u7-vsd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TkW-9Z-aY1" secondAttribute="bottom" id="fCw-L9-PYV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TkW-9Z-aY1" secondAttribute="trailing" constant="-20" id="pIF-CY-2Fb"/>
+                            <constraint firstItem="TkW-9Z-aY1" firstAttribute="top" secondItem="yFQ-OF-Ncu" secondAttribute="bottom" id="uMN-An-GdC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8bY-tt-dM9">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="AdQ-E9-FrS">
+                            <rect key="frame" x="93.5" y="6.5" width="133" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="スポット"/>
+                                <segment title="ルート"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControllerActionChanged:" destination="3qa-Xk-wbi" eventType="valueChanged" id="VbJ-Je-gJo"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mySegumetControl" destination="AdQ-E9-FrS" id="WOR-ef-OAG"/>
+                        <outlet property="myTableView" destination="TkW-9Z-aY1" id="IDq-vE-VZ1"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1045" y="1179"/>
+        </scene>
+        <!--My Route View Controller-->
+        <scene sceneID="7BX-FI-Ccq">
+            <objects>
+                <viewController id="h8e-qo-CDu" customClass="MyRouteViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IHU-Uh-dLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="PsE-wY-XpA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bTf-Yu-UZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="画面遷移" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-61-7yv">
+                                <rect key="frame" x="105" y="144" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1t-HN-zEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="1179"/>
         </scene>
         <!--Route-->
         <scene sceneID="Pob-Eg-MJy">
@@ -305,7 +357,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PpD-2x-68c" id="zp5-bt-EXT">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj0-e8-SIP">
@@ -565,9 +617,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="box-aL-tBt" kind="relationship" relationship="viewControllers" id="02Y-d7-iP9"/>
-                        <segue destination="Xl5-aE-uC2" kind="relationship" relationship="viewControllers" id="m6w-rn-hz8"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="h2D-kI-j2a"/>
                         <segue destination="wOC-8T-jsC" kind="relationship" relationship="viewControllers" id="nZB-6K-k5l"/>
+                        <segue destination="Xl5-aE-uC2" kind="relationship" relationship="viewControllers" id="m6w-rn-hz8"/>
+                        <segue destination="PTP-jK-r46" kind="relationship" relationship="viewControllers" id="bdM-9U-Vbg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZa-5a-Fm2" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -48,25 +48,6 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
-    // Cell が選択された場合
-    func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        // [indexPath.row] から画像名を探し、UImage を設定
-        selectedRouteImage = UIImage(named:"\(routeImage[indexPath.row])")
-        if selectedRouteImage != nil {
-            // SubViewController へ遷移するために Segue を呼び出す
-            performSegueWithIdentifier("toRouteCell",sender: nil)
-        }
-        
-    }
-    
-    // Segue 準備
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "toRouteCell") {
-            let subVC: MyRouteViewController = (segue.destinationViewController as? MyRouteViewController)!
-            // SubViewController のselectedImgに選択された画像を設定する
-            subVC.selectedRouteImg = selectedRouteImage
-        }
-    }
     
     
     override func didReceiveMemoryWarning() {
@@ -74,11 +55,6 @@ class MyRouteTableViewController: UIViewController, UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
 
-    
-    
-    @IBAction func unwindToSubject(segue:UIStoryboardSegue){
-        print(segue.identifier)
-    }
     
     
 }

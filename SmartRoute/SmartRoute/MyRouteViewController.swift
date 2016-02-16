@@ -11,15 +11,9 @@ import UIKit
 class MyRouteViewController: UIViewController {
     
     
-    @IBOutlet var routeImage: UIImageView!
-    
-    var selectedRouteImg: UIImage?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        routeImage.image = selectedRouteImg
         
 
     }
