@@ -11,4 +11,5 @@ target 'SmartRoute' do
     pod 'GoogleMaps'
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'Eureka'
 end

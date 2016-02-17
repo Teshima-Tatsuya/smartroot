@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Eureka
+
+
 let closeButton = UIButton(frame: CGRectMake(10, 5, 70, 30))
 let photoImage = UIImage(named: "photo")
 let photoButton = UIButton(frame: CGRectMake(70, 5, 70, 30))
