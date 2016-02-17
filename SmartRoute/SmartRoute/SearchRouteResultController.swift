@@ -13,10 +13,10 @@ import SwiftyJSON
 
 class SearchRouteResultController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var tableView: UITableView!
-  
-   
-    // 画面遷移受け取りよう変数
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+     // 画面遷移受け取りよう変数
     var Route:[String] = []
     
     var StepArticles:[[String: JSON]] = []
@@ -53,7 +53,8 @@ class SearchRouteResultController: UIViewController,UITableViewDataSource, UITab
             params["waypoints"] = tmp
 
         }
-
+        params["language"] = "ja"
+        
         // google direction api にリクエストとレスポンス受信
         Alamofire.request(.GET,"https://maps.googleapis.com/maps/api/directions/json?",parameters: params).responseJSON{ response in
 //            print(response)
@@ -97,8 +98,12 @@ class SearchRouteResultController: UIViewController,UITableViewDataSource, UITab
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomViewCell", forIndexPath: indexPath)
         
-        let title = tableView.viewWithTag(1) as! UILabel
+        let title = tableView.viewWithTag(1) as! UILabel!
         title.text = self.StepArticles[indexPath.row]["html"]!.string
+        let htmltmp = title.text!.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!
+        let options:[String:String] = [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType]
+        title.attributedText = try? NSAttributedString(data:htmltmp,options:options,documentAttributes:nil)
+        
         let routeText = tableView.viewWithTag(2) as! UILabel
         routeText.text = self.StepArticles[indexPath.row]["duration"]!["text"].string
         let addInfo = tableView.viewWithTag(3) as! UILabel
@@ -106,11 +111,9 @@ class SearchRouteResultController: UIViewController,UITableViewDataSource, UITab
         print(title.text)
         print(routeText.text)
         print(addInfo.text)
-        print("motodata")
         print(self.StepArticles[indexPath.row]["html"]!.string)
         print(self.StepArticles[indexPath.row]["duration"]!["text"].string)
         print(self.StepArticles[indexPath.row]["distance"]!["text"].string)
-        print("motodata-owari")
         
         return cell
     }
