@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6046635E1C59109500C67D1D /* mySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046635D1C59109500C67D1D /* mySegue.swift */; };
 		605BAEC91C5A5B57004E4D68 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */; };
+		6099A7551C76141A00D1B8D0 /* spotSaveFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099A7541C76141A00D1B8D0 /* spotSaveFormViewController.swift */; };
 		60B45C0B1C56654A008A4D1B /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B45C0A1C56654A008A4D1B /* testImage.jpg */; };
 		60B4CF9D1C60F21500350949 /* spotTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60B4CF9C1C60F21500350949 /* spotTest.jpg */; };
 		60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		6046635D1C59109500C67D1D /* mySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mySegue.swift; sourceTree = "<group>"; };
 		605BAEC81C5A5B57004E4D68 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		6099A7541C76141A00D1B8D0 /* spotSaveFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveFormViewController.swift; sourceTree = "<group>"; };
 		60B45C0A1C56654A008A4D1B /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
 		60B4CF9C1C60F21500350949 /* spotTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotTest.jpg; sourceTree = "<group>"; };
 		60B4CFA41C60F8C300350949 /* spotSaveCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spotSaveCommentViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				60F0599F1C5118860097261B /* LaunchScreen.storyboard */,
 				60F059A21C5118860097261B /* Info.plist */,
 				6046635D1C59109500C67D1D /* mySegue.swift */,
+				6099A7541C76141A00D1B8D0 /* spotSaveFormViewController.swift */,
 			);
 			path = SmartRoute;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				60F059C51C512FB60097261B /* SettingViewController.swift in Sources */,
 				BA0B578F1C672B1600C33844 /* TransitionFlipFromLeftSegue.swift in Sources */,
 				60F059B91C51206C0097261B /* SearchRouteController.swift in Sources */,
+				6099A7551C76141A00D1B8D0 /* spotSaveFormViewController.swift in Sources */,
 				60F059C71C5130A30097261B /* SearchSpotResultController.swift in Sources */,
 				60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */,
 				60F059971C5118860097261B /* AppDelegate.swift in Sources */,

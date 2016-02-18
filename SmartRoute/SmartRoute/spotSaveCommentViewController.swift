@@ -16,8 +16,7 @@ let photoButton = UIButton(frame: CGRectMake(70, 5, 70, 30))
 
 class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
     
-    @IBOutlet var spotSaveComment: UITextView!
-    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,6 +66,6 @@ class spotSaveCommentViewController: UIViewController, UITextViewDelegate{
     @IBAction func backFromSpotSavePhotoView(segue:UIStoryboardSegue){
         
     }
-    
+    */
     
 }

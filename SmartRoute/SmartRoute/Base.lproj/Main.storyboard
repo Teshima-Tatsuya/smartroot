@@ -435,10 +435,10 @@
             </objects>
             <point key="canvasLocation" x="1030" y="-459"/>
         </scene>
-        <!--Spot Save Comment View Controller-->
+        <!--Spot Save Form View Controller-->
         <scene sceneID="khL-IW-5oW">
             <objects>
-                <viewController id="Euw-DL-I43" customClass="spotSaveCommentViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Euw-DL-I43" customClass="spotSaveFormViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HMq-Tx-tva"/>
                         <viewControllerLayoutGuide type="bottom" id="7qP-Ol-F7W"/>
@@ -463,18 +463,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コメントを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-FC-TEg">
-                                <rect key="frame" x="20" y="83" width="221" height="21"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-4D-l3C">
-                                <rect key="frame" x="-2" y="112" width="324" height="456"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -484,9 +472,6 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="spotSaveComment" destination="M9P-4D-l3C" id="bq0-as-quf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFn-d1-yv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7no-mx-stq" userLabel="Exit" sceneMemberID="exit"/>
