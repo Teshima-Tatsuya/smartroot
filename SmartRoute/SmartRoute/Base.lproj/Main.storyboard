@@ -150,79 +150,77 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1v3-Ol-rXD" kind="relationship" relationship="rootViewController" id="y2V-Ll-bLB"/>
+                        <segue destination="9pj-IN-z99" kind="relationship" relationship="rootViewController" id="GZt-X3-ztq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUy-u9-hdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030" y="1182"/>
         </scene>
-        <!--マイページ-->
-        <scene sceneID="1Ba-Oi-oeJ">
+        <!--My Page View Controller-->
+        <scene sceneID="y9R-Ic-L5R">
             <objects>
-                <viewController id="1v3-Ol-rXD" customClass="MyPageViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pj-IN-z99" customClass="MyPageViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nly-Dm-O5V"/>
-                        <viewControllerLayoutGuide type="bottom" id="t90-q0-UwK"/>
+                        <viewControllerLayoutGuide type="top" id="paz-0F-RJi"/>
+                        <viewControllerLayoutGuide type="bottom" id="vhS-JY-DFm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bSm-di-Elr">
+                    <view key="view" contentMode="scaleToFill" id="oJS-FY-Xck">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-o2-fWB">
-                                <rect key="frame" x="-4" y="64" width="328" height="455"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8y5-ih-w5R">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="bqa-DF-HGa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="RvW-46-Qgd">
                                         <rect key="frame" x="0.0" y="92" width="328" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bqa-DF-HGa" id="m4X-M2-62t">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RvW-46-Qgd" id="9dY-4s-vGd">
                                             <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="z92-sV-Fix" kind="show" id="qVg-7U-51r"/>
+                                            <segue destination="z92-sV-Fix" kind="show" id="7rJ-qu-WrO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="1v3-Ol-rXD" id="EJE-KK-MWC"/>
-                                    <outlet property="delegate" destination="1v3-Ol-rXD" id="UAJ-Ha-shD"/>
+                                    <outlet property="dataSource" destination="9pj-IN-z99" id="dX4-RD-owT"/>
+                                    <outlet property="delegate" destination="9pj-IN-z99" id="KSR-eJ-vyd"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8n2-QS-Nct">
-                                <rect key="frame" x="39" y="83" width="242" height="29"/>
-                                <segments>
-                                    <segment title="スポット"/>
-                                    <segment title="ルート"/>
-                                    <segment title="お気に入り"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segumentedControllerActionChanged:" destination="1v3-Ol-rXD" eventType="valueChanged" id="WTm-d8-TFO"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="t90-q0-UwK" firstAttribute="top" secondItem="uOt-o2-fWB" secondAttribute="bottom" id="0f5-QM-8VD"/>
-                            <constraint firstItem="8n2-QS-Nct" firstAttribute="top" secondItem="nly-Dm-O5V" secondAttribute="bottom" constant="19" id="Aeo-yg-cIz"/>
-                            <constraint firstItem="8n2-QS-Nct" firstAttribute="leading" secondItem="bSm-di-Elr" secondAttribute="leadingMargin" constant="23" id="Bz9-vh-n4f"/>
-                            <constraint firstItem="uOt-o2-fWB" firstAttribute="leading" secondItem="bSm-di-Elr" secondAttribute="leadingMargin" constant="-20" id="FHp-Yo-jpC"/>
-                            <constraint firstItem="uOt-o2-fWB" firstAttribute="top" secondItem="nly-Dm-O5V" secondAttribute="bottom" id="Mhs-xE-0h1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uOt-o2-fWB" secondAttribute="trailing" constant="-20" id="Pav-ql-g8k"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8n2-QS-Nct" secondAttribute="trailing" constant="23" id="yeG-cO-Uvy"/>
+                            <constraint firstItem="8y5-ih-w5R" firstAttribute="bottom" secondItem="oJS-FY-Xck" secondAttribute="bottomMargin" id="EeA-fB-s9d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8y5-ih-w5R" secondAttribute="trailing" constant="-20" id="das-Yk-q3m"/>
+                            <constraint firstItem="8y5-ih-w5R" firstAttribute="top" secondItem="oJS-FY-Xck" secondAttribute="topMargin" id="e4e-Y0-bht"/>
+                            <constraint firstItem="8y5-ih-w5R" firstAttribute="leading" secondItem="oJS-FY-Xck" secondAttribute="leadingMargin" constant="-20" id="pGc-BJ-sfM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="マイページ" id="9sA-mI-rBx">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Wls-Wv-xDt"/>
+                    <navigationItem key="navigationItem" id="TVu-Bv-C4u">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="T0G-6u-D0s">
+                            <rect key="frame" x="40.5" y="7" width="239" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="スポット"/>
+                                <segment title="ルート"/>
+                                <segment title="お気に入り"/>
+                            </segments>
+                            <connections>
+                                <action selector="segumentedControllerActionChanged:" destination="9pj-IN-z99" eventType="valueChanged" id="Gz1-C1-8Vu"/>
+                            </connections>
+                        </segmentedControl>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="mySegumentedControl" destination="8n2-QS-Nct" id="1Os-2L-QLI"/>
-                        <outlet property="myTableView" destination="uOt-o2-fWB" id="JNs-8L-ufi"/>
+                        <outlet property="mySegumentedControl" destination="T0G-6u-D0s" id="8xC-D9-vvq"/>
+                        <outlet property="myTableView" destination="8y5-ih-w5R" id="gZH-cf-Qdm"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5jk-o3-8YQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAB-Ee-9dT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1408" y="1182"/>
         </scene>
