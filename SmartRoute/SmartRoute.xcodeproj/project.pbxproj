@@ -23,8 +23,6 @@
 		60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059B61C511E8D0097261B /* CAPSPageMenu.swift */; };
 		60F059B91C51206C0097261B /* SearchRouteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059B81C51206C0097261B /* SearchRouteController.swift */; };
 		60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059BA1C5120B50097261B /* SearchRouteResultController.swift */; };
-		60F059BF1C51260D0097261B /* MyRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059BE1C51260D0097261B /* MyRouteViewController.swift */; };
-		60F059C11C51261D0097261B /* MyRouteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C01C51261D0097261B /* MyRouteTableViewController.swift */; };
 		60F059C31C5129380097261B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C21C5129380097261B /* MyPageViewController.swift */; };
 		60F059C51C512FB60097261B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C41C512FB60097261B /* SettingViewController.swift */; };
 		60F059C71C5130A30097261B /* SearchSpotResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C61C5130A30097261B /* SearchSpotResultController.swift */; };
@@ -55,8 +53,6 @@
 		60F059B61C511E8D0097261B /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		60F059B81C51206C0097261B /* SearchRouteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouteController.swift; sourceTree = "<group>"; };
 		60F059BA1C5120B50097261B /* SearchRouteResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouteResultController.swift; sourceTree = "<group>"; };
-		60F059BE1C51260D0097261B /* MyRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRouteViewController.swift; sourceTree = "<group>"; };
-		60F059C01C51261D0097261B /* MyRouteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRouteTableViewController.swift; sourceTree = "<group>"; };
 		60F059C21C5129380097261B /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		60F059C41C512FB60097261B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		60F059C61C5130A30097261B /* SearchSpotResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSpotResultController.swift; sourceTree = "<group>"; };
@@ -123,8 +119,6 @@
 				60F059C61C5130A30097261B /* SearchSpotResultController.swift */,
 				60F059C41C512FB60097261B /* SettingViewController.swift */,
 				60F059C21C5129380097261B /* MyPageViewController.swift */,
-				60F059BE1C51260D0097261B /* MyRouteViewController.swift */,
-				60F059C01C51261D0097261B /* MyRouteTableViewController.swift */,
 				60F059BA1C5120B50097261B /* SearchRouteResultController.swift */,
 				60B45C0A1C56654A008A4D1B /* testImage.jpg */,
 				60B4CF9C1C60F21500350949 /* spotTest.jpg */,
@@ -314,8 +308,6 @@
 				60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */,
 				60F059971C5118860097261B /* AppDelegate.swift in Sources */,
 				6046635E1C59109500C67D1D /* mySegue.swift in Sources */,
-				60F059BF1C51260D0097261B /* MyRouteViewController.swift in Sources */,
-				60F059C11C51261D0097261B /* MyRouteTableViewController.swift in Sources */,
 				60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */,
 				60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */,
 				BA0B57921C6CC2BF00C33844 /* TestController.swift in Sources */,

@@ -10,8 +10,11 @@ import UIKit
 
 class MyPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var mySegumetControl: UISegmentedControl!
+    @IBOutlet var mySegumentedControl: UISegmentedControl!
+    
+    
     @IBOutlet var myTableView: UITableView!
+    
     
     let mySpot:[String] = ["広島", "東京"]
     let myRoute:[String] = ["オススメのラーメン屋", "広島観光ルート"]
@@ -30,7 +33,7 @@ class MyPageViewController: UIViewController, UITableViewDataSource, UITableView
         
         var myContents = 0
         
-        switch(mySegumetControl.selectedSegmentIndex)
+        switch(mySegumentedControl.selectedSegmentIndex)
         {
         case 0:
             myContents = mySpot.count
@@ -54,7 +57,7 @@ class MyPageViewController: UIViewController, UITableViewDataSource, UITableView
         
         let myCell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
         
-        switch(mySegumetControl.selectedSegmentIndex)
+        switch(mySegumentedControl.selectedSegmentIndex)
         {
         case 0:
             myCell.textLabel!.text = mySpot[indexPath.row]
@@ -73,8 +76,7 @@ class MyPageViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     }
-    
-    @IBAction func segmentedControllerActionChanged(sender: AnyObject) {
+    @IBAction func segumentedControllerActionChanged(sender: AnyObject) {
         
         myTableView.reloadData()
         
