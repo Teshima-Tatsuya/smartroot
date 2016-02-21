@@ -12,10 +12,7 @@ class MyPageViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var mySegumentedControl: UISegmentedControl!
     
-    
     @IBOutlet var myTableView: UITableView!
-    
-    
     let mySpot:[String] = ["広島", "東京"]
     let myRoute:[String] = ["オススメのラーメン屋", "広島観光ルート"]
     
@@ -76,12 +73,12 @@ class MyPageViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     }
+    
     @IBAction func segumentedControllerActionChanged(sender: AnyObject) {
         
         myTableView.reloadData()
         
     }
-    
     
 }
 
