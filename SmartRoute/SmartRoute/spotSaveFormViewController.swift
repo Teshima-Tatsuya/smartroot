@@ -2,7 +2,7 @@
 //  spotSaveFormViewController.swift
 //  SmartRoute
 //
-//  Created by kazuki nishimura on 2016/02/19.
+//  Created by kazuki nishimura on 2016/02/21.
 //  Copyright © 2016年 kazuki nishimura. All rights reserved.
 //
 
@@ -15,11 +15,11 @@ class spotSaveFormViewController: FormViewController {
         super.viewDidLoad()
         
         form +++ Section()
-            <<< TextRow("TextFiled"){
+            <<< TextAreaRow("TextArea"){
+                $0.title = "テキスト入力"
                 $0.placeholder = "ここに書いてね"
         }
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,3 +28,4 @@ class spotSaveFormViewController: FormViewController {
     
     
 }
+
