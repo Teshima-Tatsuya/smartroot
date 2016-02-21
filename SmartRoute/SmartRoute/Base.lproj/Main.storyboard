@@ -411,7 +411,7 @@
                                     <navigationItem title="Title" id="GSs-Th-EO4">
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="tKY-jC-0Qc">
                                             <connections>
-                                                <segue destination="Euw-DL-I43" kind="show" id="AQy-lI-Zbi"/>
+                                                <segue destination="SHw-Ln-pWG" kind="show" id="eLO-pA-ojH"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -435,48 +435,66 @@
             </objects>
             <point key="canvasLocation" x="1030" y="-459"/>
         </scene>
-        <!--Spot Save Form View Controller-->
-        <scene sceneID="khL-IW-5oW">
+        <!--Navigation Controller-->
+        <scene sceneID="1Sq-3B-5ao">
             <objects>
-                <viewController id="Euw-DL-I43" customClass="spotSaveFormViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="SHw-Ln-pWG" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NlZ-6e-ceQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yzt-0E-UC0" kind="relationship" relationship="rootViewController" id="X3u-Y1-9jg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36U-Hg-0Ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="-200"/>
+        </scene>
+        <!--Spot Save Form View Controller-->
+        <scene sceneID="LGJ-4g-QfZ">
+            <objects>
+                <viewController id="yzt-0E-UC0" customClass="spotSaveFormViewController" customModule="SmartRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HMq-Tx-tva"/>
-                        <viewControllerLayoutGuide type="bottom" id="7qP-Ol-F7W"/>
+                        <viewControllerLayoutGuide type="top" id="YGd-CF-PL5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fd9-8A-se0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tLL-qG-qbg">
+                    <view key="view" contentMode="scaleToFill" id="jk6-FT-m4a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-Qf-gtx">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="4Td-gi-7Vb"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="コメント" id="ez0-hG-lyV">
-                                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="p2x-45-0rT">
-                                            <connections>
-                                                <segue destination="7no-mx-stq" kind="unwind" unwindAction="unwindToSpotSave:" id="BzA-uK-XtB"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="完了" id="iT5-cp-m13"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CNa-Qf-gtx" firstAttribute="top" secondItem="tLL-qG-qbg" secondAttribute="topMargin" id="D7P-RC-UdR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CNa-Qf-gtx" secondAttribute="trailing" constant="-20" id="My8-PO-it9"/>
-                            <constraint firstItem="CNa-Qf-gtx" firstAttribute="leading" secondItem="tLL-qG-qbg" secondAttribute="leadingMargin" constant="-20" id="waq-3p-hrI"/>
-                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gxm-ih-byX">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="OCy-Ea-qfE">
+                            <connections>
+                                <segue destination="uKA-kV-Ulm" kind="show" id="T3g-77-pZH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oaj-EV-tBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-200"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="19j-V1-Gb8">
+            <objects>
+                <viewController id="uKA-kV-Ulm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UgE-Q5-zyT"/>
+                        <viewControllerLayoutGuide type="bottom" id="c8t-Bc-q9a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BdM-hl-6zu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VFn-d1-yv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="7no-mx-stq" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPk-ke-rAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1427" y="-219"/>
+            <point key="canvasLocation" x="2235" y="-200"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYq-Dc-5WJ">
