@@ -123,5 +123,7 @@ class SearchRouteResultController: UIViewController,UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
     
-    
+    @IBAction func backFromGoogleMapRoute(segue:UIStoryboardSegue){
+        NSLog("SearchRouteResultController#backGoogleMapRouteController")
+    }
 }

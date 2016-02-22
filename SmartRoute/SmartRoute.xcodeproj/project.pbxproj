@@ -26,6 +26,7 @@
 		60F059C31C5129380097261B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C21C5129380097261B /* MyPageViewController.swift */; };
 		60F059C51C512FB60097261B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C41C512FB60097261B /* SettingViewController.swift */; };
 		60F059C71C5130A30097261B /* SearchSpotResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059C61C5130A30097261B /* SearchSpotResultController.swift */; };
+		7DF290111C7B3E6500E9C8F2 /* GoogleMapRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF290101C7B3E6500E9C8F2 /* GoogleMapRoute.swift */; };
 		AA3795AE628AD55A48FDDA82 /* Pods_SmartRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF4C2A25BF4F23B6F336764 /* Pods_SmartRoute.framework */; };
 		BA0B578B1C67263200C33844 /* FlipSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B578A1C67263200C33844 /* FlipSegue.swift */; };
 		BA0B578D1C67290D00C33844 /* PushNoAnimationSeuge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B578C1C67290D00C33844 /* PushNoAnimationSeuge.swift */; };
@@ -56,6 +57,7 @@
 		60F059C21C5129380097261B /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		60F059C41C512FB60097261B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		60F059C61C5130A30097261B /* SearchSpotResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSpotResultController.swift; sourceTree = "<group>"; };
+		7DF290101C7B3E6500E9C8F2 /* GoogleMapRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapRoute.swift; sourceTree = "<group>"; };
 		9AF4C2A25BF4F23B6F336764 /* Pods_SmartRoute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0B578A1C67263200C33844 /* FlipSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipSegue.swift; path = CustomSegue/FlipSegue.swift; sourceTree = "<group>"; };
 		BA0B578C1C67290D00C33844 /* PushNoAnimationSeuge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushNoAnimationSeuge.swift; path = CustomSegue/PushNoAnimationSeuge.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				60B45C0A1C56654A008A4D1B /* testImage.jpg */,
 				60B4CF9C1C60F21500350949 /* spotTest.jpg */,
 				60F059B81C51206C0097261B /* SearchRouteController.swift */,
+				7DF290101C7B3E6500E9C8F2 /* GoogleMapRoute.swift */,
 				60F059B41C511E500097261B /* MySpotTableViewController.swift */,
 				60F059B61C511E8D0097261B /* CAPSPageMenu.swift */,
 				60F059B21C511E320097261B /* MYSpotViewController.swift */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F059C31C5129380097261B /* MyPageViewController.swift in Sources */,
+				7DF290111C7B3E6500E9C8F2 /* GoogleMapRoute.swift in Sources */,
 				BA0B578B1C67263200C33844 /* FlipSegue.swift in Sources */,
 				60F059B31C511E320097261B /* MYSpotViewController.swift in Sources */,
 				60F059C51C512FB60097261B /* SettingViewController.swift in Sources */,
