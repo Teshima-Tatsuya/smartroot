@@ -15,7 +15,6 @@ class SearchSpotController: UIViewController,CLLocationManagerDelegate
     
     @IBOutlet var nav: UINavigationBar!
     
-    @IBOutlet var searchSpot: UITextField!
     var googleMap : GMSMapView!
     
     var locationManager:CLLocationManager! = nil
@@ -80,19 +79,34 @@ class SearchSpotController: UIViewController,CLLocationManagerDelegate
     }
     
     // 位置情報取得に成功したときに呼び出されるデリゲート.
-    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!){
-        latitude = newLocation.coordinate.latitude
-        longitude = newLocation.coordinate.longitude
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        // 3
+        if status == .AuthorizedWhenInUse {
+            
+            // 4
+            locationManager.startUpdatingLocation()
+            
+            //5
+            googleMap.myLocationEnabled = true
+            googleMap.settings.myLocationButton = true
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            
+            // 7
+            googleMap.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            
+            // 8
+            locationManager.stopUpdatingLocation()
+        }
         
     }
     
     // 位置情報取得に失敗した時に呼び出されるデリゲート.
-    func locationManager(manager: CLLocationManager!,didFailWithError error: NSError!){
+    func locationManager(manager: CLLocationManager,didFailWithError error: NSError){
         print("位置情報取得に失敗しました")
-    }
-    
-    @IBAction func backFromSpotSaveView(segue:UIStoryboardSegue){
-        
     }
     
 }
