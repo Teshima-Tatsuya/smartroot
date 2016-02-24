@@ -100,6 +100,12 @@ class SearchSpotController: UIViewController,CLLocationManagerDelegate
             
             // 8
             locationManager.stopUpdatingLocation()
+            
+            
+            //マーカーの作成
+            let marker: GMSMarker = GMSMarker()
+            marker.position = CLLocationCoordinate2DMake(manager.location!.coordinate.latitude, manager.location!.coordinate.longitude)
+            marker.map = googleMap
         }
         
     }
