@@ -17,7 +17,7 @@
 		60F059971C5118860097261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059961C5118860097261B /* AppDelegate.swift */; };
 		60F0599E1C5118860097261B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599D1C5118860097261B /* Assets.xcassets */; };
 		60F059A11C5118860097261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F0599F1C5118860097261B /* LaunchScreen.storyboard */; };
-		60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059A81C511A7C0097261B /* SearchSpotController.swift */; };
+		60F059A91C511A7C0097261B /* searchSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059A81C511A7C0097261B /* searchSpotViewController.swift */; };
 		60F059B31C511E320097261B /* MYSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059B21C511E320097261B /* MYSpotViewController.swift */; };
 		60F059B51C511E500097261B /* MySpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059B41C511E500097261B /* MySpotTableViewController.swift */; };
 		60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F059B61C511E8D0097261B /* CAPSPageMenu.swift */; };
@@ -48,7 +48,7 @@
 		60F0599D1C5118860097261B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F059A01C5118860097261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F059A21C5118860097261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60F059A81C511A7C0097261B /* SearchSpotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSpotController.swift; sourceTree = "<group>"; };
+		60F059A81C511A7C0097261B /* searchSpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchSpotViewController.swift; sourceTree = "<group>"; };
 		60F059B21C511E320097261B /* MYSpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYSpotViewController.swift; sourceTree = "<group>"; };
 		60F059B41C511E500097261B /* MySpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpotTableViewController.swift; sourceTree = "<group>"; };
 		60F059B61C511E8D0097261B /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				60F059B41C511E500097261B /* MySpotTableViewController.swift */,
 				60F059B61C511E8D0097261B /* CAPSPageMenu.swift */,
 				60F059B21C511E320097261B /* MYSpotViewController.swift */,
-				60F059A81C511A7C0097261B /* SearchSpotController.swift */,
+				60F059A81C511A7C0097261B /* searchSpotViewController.swift */,
 				60F0599D1C5118860097261B /* Assets.xcassets */,
 				60F0599F1C5118860097261B /* LaunchScreen.storyboard */,
 				60F059A21C5118860097261B /* Info.plist */,
@@ -312,7 +312,7 @@
 				60F059B71C511E8D0097261B /* CAPSPageMenu.swift in Sources */,
 				60F059971C5118860097261B /* AppDelegate.swift in Sources */,
 				6046635E1C59109500C67D1D /* mySegue.swift in Sources */,
-				60F059A91C511A7C0097261B /* SearchSpotController.swift in Sources */,
+				60F059A91C511A7C0097261B /* searchSpotViewController.swift in Sources */,
 				60F059BB1C5120B50097261B /* SearchRouteResultController.swift in Sources */,
 				BA0B57921C6CC2BF00C33844 /* TestController.swift in Sources */,
 				60B4CFA51C60F8C300350949 /* spotSaveCommentViewController.swift in Sources */,
